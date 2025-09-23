@@ -171,7 +171,7 @@ export const CodeUniversePage: React.FC = () => {
         )}
         
         {/* Chiffres binaires téléportants */}
-        <TeleportingBinaryDigitsMemo />
+        {!isMobile && <TeleportingBinaryDigitsMemo />}
         
         {/* Page d'introduction */}
         <div className="w-full flex items-start justify-center p-4 sm:p-6 pt-4 relative z-20">
