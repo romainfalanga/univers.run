@@ -291,14 +291,14 @@ export const CodeUniversePage: React.FC = () => {
                     {[
                       { 
                         level: "Échelle macroscopique", 
-                        scale: "10⁻⁴ m à 1 m", 
+                        scale: "10<sup>-4</sup> m à 1 m", 
                         desc: "Ce que nous voyons : humains, objets, monde visible", 
                         connection: "→ Formé par l'assemblage de milliards de molécules organisées",
                         color: "bg-purple-900/40 border-purple-400" 
                       },
                       { 
                         level: "Échelle moléculaire", 
-                        scale: "10⁻⁹ à 10⁻⁶ m", 
+                        scale: "10<sup>-9</sup> à 10<sup>-6</sup> m", 
                         desc: "Assemblages d'atomes : ADN, protéines, matériaux", 
                         connection: "→ Propriétés émergentes par liaison d'atomes spécifiques",
                         color: "bg-blue-900/40 border-blue-400" 
@@ -307,7 +307,7 @@ export const CodeUniversePage: React.FC = () => {
                       <div key={index} className={`p-2 sm:p-3 rounded-lg border-l-4 ${item.color} min-h-[60px] sm:min-h-[70px] flex flex-col justify-center`}>
                         <div className="font-bold text-white text-xs sm:text-sm">
                           {item.level}
-                          <span className="text-cyan-300 font-mono ml-2">{item.scale}</span>
+                          <span className="text-cyan-300 font-mono ml-2" dangerouslySetInnerHTML={{ __html: item.scale }}></span>
                         </div>
                         <div className="text-gray-300 text-xs mt-1">{item.desc}</div>
                         {item.connection && (
@@ -384,21 +384,21 @@ De même, le JavaScript qui compose un composant React n'existe pas à l'avance 
                   {[
                     {
                       level: "Échelle atomique",
-                      scale: "10⁻¹⁰ m",
+                      scale: "10<sup>-10</sup> m",
                       desc: "Briques de la matière en superposition quantique : hydrogène, carbone, fer",
                       connection: "→ Formés par l'assemblage de protons, neutrons et électrons",
                       color: "bg-green-900/40 border-green-400"
                     },
                     {
                       level: "Échelle nucléaire",
-                      scale: "10⁻¹⁵ m",
+                      scale: "10<sup>-15</sup> m",
                       desc: "Cœur des atomes révélé par observation : protons et neutrons",
                       connection: "→ Constitués de quarks liés par des gluons",
                       color: "bg-yellow-900/40 border-yellow-400"
                     },
                     {
                       level: "Échelle des particules fondamentales",
-                      scale: "10⁻¹⁸ m",
+                      scale: "10<sup>-18</sup> m",
                       desc: "Constituants ultimes révélés par mesure : quarks, leptons, bosons",
                       connection: "→ Révélées comme briques ultimes",
                       color: "bg-orange-900/40 border-orange-400"
@@ -407,7 +407,7 @@ De même, le JavaScript qui compose un composant React n'existe pas à l'avance 
                     <div key={index} className={`p-2 sm:p-3 rounded-lg border-l-4 ${item.color} min-h-[60px] sm:min-h-[70px] flex flex-col justify-center mb-2 sm:mb-3`}>
                       <div className="font-bold text-white text-xs sm:text-sm">
                         {item.level}
-                        {item.scale && <span className="text-cyan-300 font-mono ml-2">{item.scale}</span>}
+                        {item.scale && <span className="text-cyan-300 font-mono ml-2" dangerouslySetInnerHTML={{ __html: item.scale }}></span>}
                       </div>
                       <div className="text-gray-300 text-xs mt-1">{item.desc}</div>
                       {item.connection && (
@@ -462,7 +462,7 @@ De même, le JavaScript qui compose un composant React n'existe pas à l'avance 
                 <div className="p-2 sm:p-3 rounded-lg border-l-4 bg-red-900/40 border-red-400 min-h-[60px] sm:min-h-[70px] flex flex-col justify-center">
                   <div className="font-bold text-white text-xs sm:text-sm">
                     Échelle de Planck
-                    <span className="text-cyan-300 font-mono ml-2">10⁻³⁵ m</span>
+                    <span className="text-cyan-300 font-mono ml-2" dangerouslySetInnerHTML={{ __html: "10<sup>-35</sup> m" }}></span>
                   </div>
                   <div className="text-gray-300 text-xs mt-1">Granularité ultime de l'espace-temps - pure information quantique</div>
                 </div>

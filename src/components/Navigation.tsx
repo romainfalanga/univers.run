@@ -168,75 +168,7 @@ const TeleportingBinaryDigitsMenu: React.FC = () => {
 export const Navigation: React.FC = () => {
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
-  const [displayedText, setDisplayedText] = useState('');
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [isTyping, setIsTyping] = useState(false);
-  
-  // Phrases qui changent toutes les 3 secondes
-  const phrases = [
-    "Si dieu a un menu, c'est celui-ci",
-    "L'univers est un jeu : amuse-toi"
-  ];
-  
-  // Fermer le menu lors du changement de route avec un délai pour éviter les conflits
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsMobileMenuOpen(false);
-    }, 50); // Petit délai pour éviter les conflits de rendu
-    
-    return () => clearTimeout(timer);
-  }, [location.pathname]);
-  
-  // Effet de machine à écrire avec suppression et écriture
-  useEffect(() => {
-    const currentPhrase = phrases[currentPhraseIndex];
-    
-    if (!isDeleting && !isTyping) {
-      // Attendre 1 seconde avant de commencer à supprimer
-      const waitTimer = setTimeout(() => {
-        setIsDeleting(true);
-      }, 1000);
-      return () => clearTimeout(waitTimer);
-    }
-    
-    if (isDeleting) {
-      // Supprimer caractère par caractère (plus rapide)
-      const deleteTimer = setTimeout(() => {
-        setDisplayedText(prev => {
-          if (prev.length === 0) {
-            setIsDeleting(false);
-            setIsTyping(true);
-            setCurrentPhraseIndex(prevIndex => (prevIndex + 1) % phrases.length);
-            return '';
-          }
-          return prev.slice(0, -1);
-        });
-      }, 30); // 30ms entre chaque suppression
-      return () => clearTimeout(deleteTimer);
-    }
-    
-    if (isTyping) {
-      // Écrire caractère par caractère
-      const typeTimer = setTimeout(() => {
-        setDisplayedText(prev => {
-          if (prev.length === currentPhrase.length) {
-            setIsTyping(false);
-            return prev;
-          }
-          return currentPhrase.slice(0, prev.length + 1);
-        });
-      }, 50); // 50ms entre chaque caractère
-      return () => clearTimeout(typeTimer);
-    }
-  }, [currentPhraseIndex, isDeleting, isTyping, displayedText, phrases]);
-  
-  // Initialiser le texte au premier rendu
-  useEffect(() => {
-    if (displayedText === '') {
-      setIsTyping(true);
-    }
-  }, [displayedText]);
+  const [displayedText] = useState("L'univers est un jeu, alors amuse-toi");
   
   const navigationItems = [
     {
@@ -615,9 +547,9 @@ export const Navigation: React.FC = () => {
               </div>
               
               {/* Texte principal avec effets multiples */}
-              <h2 className="relative z-10 text-4xl sm:text-5xl font-black mb-0 transform transition-all duration-1000 p-3 sm:p-8 rounded-3xl overflow-hidden">
+              <h2 className="relative z-10 text-3xl sm:text-5xl font-black mb-0 transform transition-all duration-1000 p-3 sm:p-8 rounded-3xl overflow-hidden">
                 <span className="relative z-10 bg-gradient-to-r from-cyan-300 via-purple-300 via-pink-300 to-yellow-300 bg-clip-text text-transparent bg-[length:400%_400%] animate-gradient-x drop-shadow-[0_0_30px_rgba(6,182,212,0.8)] group-hover:drop-shadow-[0_0_50px_rgba(147,51,234,1)] transition-all duration-1000 font-extrabold tracking-wider whitespace-nowrap">
-                  Menu de Dieu
+                  Menu de l'univers
                 </span>
                 
                 {/* Bordure lumineuse animée */}
@@ -675,8 +607,6 @@ export const Navigation: React.FC = () => {
               <div className="relative z-10 p-4 sm:p-6 text-center">
                 <p className="text-lg sm:text-xl lg:text-2xl font-semibold bg-gradient-to-r from-cyan-200 via-purple-200 via-pink-200 to-yellow-200 bg-clip-text text-transparent bg-[length:400%_400%] animate-gradient-x drop-shadow-[0_0_20px_rgba(6,182,212,0.6)] leading-relaxed italic">
                   {displayedText}
-                  {/* Curseur clignotant */}
-                  <span className="inline-block w-0.5 h-6 sm:h-7 bg-cyan-300 ml-1 animate-pulse"></span>
                 </p>
                 
                 {/* Bordure lumineuse animée autour du texte */}
@@ -702,16 +632,7 @@ export const Navigation: React.FC = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  // Fermeture immédiate pour éviter les bugs de transition
-                  setIsMobileMenuOpen(false);
-                  // Force le re-rendu après navigation
-                  setTimeout(() => {
-                    // Assure que le menu reste fermé après navigation
-                    setIsMobileMenuOpen(false);
-                  }, 100);
-                }}
+                onClick={() => setIsMobileMenuOpen(false)}
                 className={`relative group flex items-center justify-center p-6 sm:p-8 rounded-2xl sm:rounded-3xl border-2 transition-all duration-300 sm:duration-700 transform hover:scale-105 active:scale-95 flex-1 sm:max-w-xs ${
                   location.pathname === item.path
                     ? `bg-gradient-to-br from-slate-800/95 to-slate-700/95 ${item.borderColor} ${item.shadowColor} shadow-2xl`
@@ -732,13 +653,13 @@ export const Navigation: React.FC = () => {
                 
                 {/* Contenu */}
                 <div className="relative z-10">
-                  <h3 className={`text-xl sm:text-2xl lg:text-2xl xl:text-3xl font-bold ${item.textColor} group-hover:text-white transition-colors duration-300 sm:duration-500 text-center whitespace-nowrap`}>
+                  <h3 className={`text-xl sm:text-2xl lg:text-2xl xl:text-3xl font-bold ${item.textColor} group-hover:text-white transition-colors duration-300 sm:duration-500 text-center`}>
                     {item.title}
                   </h3>
                 </div>
                 
                 {/* Effet de scan */}
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 sm:duration-1000 animate-scan rounded-2xl sm:rounded-3xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 sm:duration-1000 rounded-2xl sm:rounded-3xl"></div>
               </Link>
             ))}
           </div>
