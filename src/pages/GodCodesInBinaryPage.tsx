@@ -4,17 +4,23 @@ import { Code2, Zap, ArrowLeft, Binary, Cpu, Eye, Layers, Atom } from 'lucide-re
 
 // Composant pour les chiffres binaires qui se téléportent - version divine
 const DivineBinaryDigits: React.FC = () => {
+  // Tableau des caractères possibles : 0, 1, q, ℓ
+  const characters = ['0', '1', 'q', 'ℓ'];
+  
+  // Fonction pour générer un caractère aléatoire
+  const getRandomCharacter = () => characters[Math.floor(Math.random() * characters.length)];
+
   const [digits, setDigits] = React.useState(() => 
     Array.from({ length: 50 }, (_, i) => {
       return {
         id: i,
-        value: Math.random() > 0.5 ? '1' : '0',
+        value: getRandomCharacter(),
         top: Math.random() * 90 + 5,
         left: Math.random() * 90 + 5,
         opacity: Math.random() * 0.4 + 0.2,
         size: 'text-xl',
         visible: true,
-        nextChangeTime: Date.now() + Math.random() * 100 + 50, // Plus rapide pour l'effet divin
+        nextChangeTime: Date.now() + Math.random() * 500 + 250, // Divisé par 5 pour l'effet divin
         color: ['#FFD700', '#FFA500', '#FF6347', '#00CED1', '#9370DB'][Math.floor(Math.random() * 5)]
       };
     })
@@ -30,18 +36,18 @@ const DivineBinaryDigits: React.FC = () => {
               return {
                 ...digit,
                 visible: false,
-                nextChangeTime: now + 30
+                nextChangeTime: now + 150
               };
             } else {
               return {
                 ...digit,
-                value: Math.random() > 0.5 ? '1' : '0',
+                value: getRandomCharacter(),
                 top: Math.random() * 90 + 5,
                 left: Math.random() * 90 + 5,
                 opacity: Math.random() * 0.4 + 0.2,
                 size: 'text-xl',
                 visible: true,
-                nextChangeTime: now + Math.random() * 100 + 50,
+                nextChangeTime: now + Math.random() * 500 + 250,
                 color: ['#FFD700', '#FFA500', '#FF6347', '#00CED1', '#9370DB'][Math.floor(Math.random() * 5)]
               };
             }
@@ -49,7 +55,7 @@ const DivineBinaryDigits: React.FC = () => {
           return digit;
         })
       );
-    }, 5);
+    }, 25);
 
     return () => clearInterval(interval);
   }, []);
@@ -457,7 +463,7 @@ export const GodCodesInBinaryPage: React.FC = () => {
               <div className="bg-gradient-to-r from-indigo-900/40 to-purple-900/30 backdrop-blur-sm rounded-lg p-4 sm:p-6 border-l-4 border-indigo-400 shadow-xl">
                 <p className="text-sm sm:text-base lg:text-lg text-gray-200 leading-relaxed">
                   <strong className="text-indigo-300">Mécanique Quantique : </strong> 
-                  En prenant en compte la mécanique quantique dans ce schéma, les composants React, le JavaScript et même les 0 et 1 n'existent pas de manière déterminée tant qu'on ne les observe pas. Ils existent sous forme de probabilités, et les observer les contraint à « choisir » une seule manière d'être.
+                  En prenant en compte la mécanique quantique dans ce schéma, les composants React, le JavaScript et même les 0 et 1 n'existent pas de manière déterminée tant qu\'on ne les observe pas. Ils existent sous forme de probabilités, et les observer les contraint à « choisir » une seule manière d\'être.
                 </p>
               </div>
               
@@ -465,7 +471,7 @@ export const GodCodesInBinaryPage: React.FC = () => {
               <div className="bg-gradient-to-r from-purple-900/40 to-red-900/30 backdrop-blur-sm rounded-lg p-4 sm:p-6 border-l-4 border-purple-400 shadow-xl">
                 <p className="text-sm sm:text-base lg:text-lg text-gray-200 leading-relaxed">
                   <strong className="text-purple-300">Modifier la Réalité : </strong> 
-                  Si l'univers est une application, son code source binaire se trouve à l'échelle des particules fondamentales. Modifier l'ensemble des 0 et 1 d'un composant depuis cette échelle engendrerait les compilations couche par couche des échelles supérieures, jusqu'à modifier intégralement un composant de l'univers. Une entité capable de manipuler directement ces bits (particules fondamentales) pourrait, le temps d'une fraction de seconde, figer les probabilités de chaque échelle. Chaque composant et ligne de code existerait alors pleinement, avant de redevenir incertain l'instant suivant. L'interface utilisateur, elle, resterait stable, mais sous le capot, les échelles de la mécanique quantique retourneraient à leur état de probabilités. Une telle puissance permettrait non seulement de modifier des composants, mais aussi d'en créer, comme le représente la simulation de codage binaire ci-dessus, mais à une échelle infiniment plus vaste.
+                  Si l'univers est une application, son code source binaire se trouve à l\'échelle des particules fondamentales. Modifier l\'ensemble des 0 et 1 d\'un composant depuis cette échelle engendrerait les compilations couche par couche des échelles supérieures, jusqu\'à modifier intégralement un composant de l\'univers. Une entité capable de manipuler directement ces bits (particules fondamentales) pourrait, le temps d\'une fraction de seconde, figer les probabilités de chaque échelle. Chaque composant et ligne de code existerait alors pleinement, avant de redevenir incertain l\'instant suivant. L\'interface utilisateur, elle, resterait stable, mais sous le capot, les échelles de la mécanique quantique retourneraient à leur état de probabilités. Une telle puissance permettrait non seulement de modifier des composants, mais aussi d\'en créer, comme le représente la simulation de codage binaire ci-dessus, mais à une échelle infiniment plus vaste.
                 </p>
               </div>
             </div>

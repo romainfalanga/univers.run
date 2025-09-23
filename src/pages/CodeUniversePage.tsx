@@ -4,6 +4,12 @@ import { Code, Layers, Zap, Cpu, Binary, ArrowDown, Globe } from 'lucide-react';
 
 // Composant pour les chiffres binaires qui se téléportent
 const TeleportingBinaryDigits: React.FC = () => {
+  // Tableau des caractères possibles : 0, 1, q, ℓ
+  const characters = ['0', '1', 'q', 'ℓ'];
+  
+  // Fonction pour générer un caractère aléatoire
+  const getRandomCharacter = () => characters[Math.floor(Math.random() * characters.length)];
+
   // Fonction pour vérifier si deux positions se chevauchent
   const checkCollision = (newTop: number, newLeft: number, existingDigits: any[], minDistance: number = 0.8) => {
     return existingDigits.some(digit => {
@@ -41,7 +47,7 @@ const TeleportingBinaryDigits: React.FC = () => {
       
       const newDigit = {
         id: i,
-        value: Math.random() > 0.5 ? '1' : '0',
+        value: getRandomCharacter(),
         top: position.top,
         left: position.left,
         opacity: Math.random() * 0.3 + 0.1,
@@ -67,7 +73,7 @@ const TeleportingBinaryDigits: React.FC = () => {
               return {
                 ...digit,
                 visible: false,
-                nextChangeTime: now + 100 // Réapparaître dans exactement 0.1 seconde
+                nextChangeTime: now + 200 // Réapparaître dans exactement 0.2 seconde
               };
             } else {
               // Réapparaître à un nouvel endroit avec de nouvelles propriétés (sans collision)
@@ -75,20 +81,20 @@ const TeleportingBinaryDigits: React.FC = () => {
               
               return {
                 ...digit,
-                value: Math.random() > 0.5 ? '1' : '0',
+                value: getRandomCharacter(),
                 top: position.top,
                 left: position.left,
                 opacity: Math.random() * 0.3 + 0.1,
                 size: ['text-xl', 'text-2xl', 'text-3xl'][Math.floor(Math.random() * 3)],
                 visible: true,
-                nextChangeTime: now + Math.random() * 200 + 100 // Rester visible 0.1s à 0.3s avant prochaine téléportation
+                nextChangeTime: now + Math.random() * 400 + 300 // Rester visible 0.3s à 0.7s avant prochaine téléportation
               };
             }
           }
           return digit;
         })
       );
-    }, 10); // Vérification toutes les 10ms
+    }, 150); // Vérification toutes les 150ms
 
     return () => clearInterval(interval);
   }, []);
@@ -117,6 +123,8 @@ const TeleportingBinaryDigits: React.FC = () => {
   );
 };
 
+const TeleportingBinaryDigitsMemo = React.memo(TeleportingBinaryDigits);
+
 export const CodeUniversePage: React.FC = () => {
   const location = useLocation();
 
@@ -138,7 +146,7 @@ export const CodeUniversePage: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500/5 to-transparent animate-cosmic-glow z-0"></div>
         
         {/* Chiffres binaires téléportants */}
-        <TeleportingBinaryDigits />
+        <TeleportingBinaryDigitsMemo />
         
         {/* Page d'introduction */}
         <div className="w-full flex items-start justify-center p-4 sm:p-6 pt-4 relative z-20">
@@ -233,7 +241,7 @@ export const CodeUniversePage: React.FC = () => {
               
               <div className="mt-6 sm:mt-8 bg-gradient-to-r from-gray-900/60 to-slate-900/50 backdrop-blur-sm rounded-lg p-4 sm:p-6 border-l-4 border-gray-400">
                 <p className="text-xs sm:text-sm lg:text-base text-gray-200 leading-relaxed font-medium">
-                  <strong className="text-white">Point clé :</strong> Ces cadres supérieurs ne sont pas des "échelles" au sens où nous l'entendons dans la cascade qui suit. Ils sont les <strong className="text-gray-300">fondations invisibles</strong> qui permettent à toutes les échelles d'exister et d'interagir. Dans l'analogie, le tissu de l'espace-temps et l'appareil électronique jouent le même rôle : ils sont les <strong className="text-gray-300">environnements d'exécution</strong> de leurs cascades respectives.
+                  <strong className="text-white">Point clé :</strong> Ces cadres supérieurs ne sont pas des "échelles" au sens où nous l'entendons dans la cascade qui suit. Ils sont les <strong className="text-gray-300">fondations invisibles</strong> qui permettent à toutes les échelles d'exister et d\'interagir. Dans l\'analogie, le tissu de l\'espace-temps et l\'appareil électronique jouent le même rôle : ils sont les <strong className="text-gray-300">environnements d\'exécution</strong> de leurs cascades respectives.
                 </p>
               </div>
             </div>
@@ -331,7 +339,7 @@ export const CodeUniversePage: React.FC = () => {
                     À partir de l'échelle atomique (~10⁻¹⁰ m), tout change : nous entrons dans le domaine de la <strong className="text-purple-300">superposition quantique</strong>.
                   </p>
                   <p>
-                    <strong className="text-cyan-300">Dans l'univers :</strong> à cette échelle, les entités physiques (atomes, électrons, particules) existent dans plusieurs états à la fois. Dans l'<strong className="text-purple-300">expérience de la double fente</strong>, par exemple, un électron ou un atome passe simultanément par les deux fentes, créant des interférences avec lui-même. Leur existence est une <strong className="text-yellow-300">probabilité</strong> diffuse jusqu'à ce qu'une observation ou une mesure "effondre" cette superposition en un état défini.
+                    <strong className="text-cyan-300">Dans l'univers :</strong> à cette échelle, les entités physiques (atomes, électrons, particules) existent dans plusieurs états à la fois. Dans l'<strong className="text-purple-300">expérience de la double fente</strong>, par exemple, un électron ou un atome passe simultanément par les deux fentes, créant des interférences avec lui-même. Leur existence est une <strong className="text-yellow-300">probabilité</strong> diffuse jusqu'à ce qu\'une observation ou une mesure "effondre" cette superposition en un état défini.
                   </p>
                   <p>
                     <strong className="text-green-300">Dans l'application :</strong> En suivant cette logique, l'organisation des composants React qui produit le HTML et le CSS n'existe pas sous une forme unique et figée. Elle se déploie comme un ensemble de <strong className="text-yellow-300">probabilités</strong> d'agencements de composants possibles. Ce n'est qu'au moment où l'on observe cette organisation que les composants "choisissent" une configuration particulière.
@@ -439,7 +447,7 @@ De même, le JavaScript qui compose un composant React n'existe pas à l'avance 
                 <p className="text-xs sm:text-sm lg:text-base text-cyan-100 leading-relaxed font-medium">
                 <strong className="text-cyan-300">Chaque couche encapsule la précédente :</strong> L'interface utilisateur que nous voyons est générée par du HTML et du CSS, eux-mêmes issus des composants React, écrits en JavaScript, exécutés par du C/C++, traduits en instructions processeur et finalement convertis en 0 et 1.
 
-De la même façon, notre corps est constitué de molécules, elles-mêmes faites d'atomes, formés de nucléons, composés de particules fondamentales. <strong className="text-purple-300">Mais à partir de l'échelle atomique, tout existe en superposition quantique jusqu'à ce qu'on "regarde sous le capot".</strong>
+De la même façon, notre corps est constitué de molécules, elles-mêmes faites d'atomes, formés de nucléons, composés de particules fondamentales. <strong className="text-purple-300">Mais à partir de l\'échelle atomique, tout existe en superposition quantique jusqu\'à ce qu\'on "regarde sous le capot".</strong>
                 </p>
               </div>
             </div>

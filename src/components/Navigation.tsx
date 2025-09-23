@@ -3,13 +3,19 @@ import { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Zap, Microscope } from 'lucide-react';
 
+// Fonction utilitaire pour générer un caractère aléatoire
+const getRandomCharacter = () => {
+  const characters = ['0', '1', 'q', 'ℓ'];
+  return characters[Math.floor(Math.random() * characters.length)];
+};
+
 // Composant pour les chiffres binaires qui se téléportent
 const TeleportingBinaryDigits: React.FC = () => {
   const [digits, setDigits] = React.useState(() => 
     Array.from({ length: 15 }, (_, i) => {
       return {
         id: i,
-        value: Math.random() > 0.5 ? '1' : '0',
+        value: getRandomCharacter(),
         top: Math.random() * 90 + 5,
         left: Math.random() * 90 + 5,
         opacity: Math.random() * 0.3 + 0.1,
@@ -31,26 +37,26 @@ const TeleportingBinaryDigits: React.FC = () => {
               return {
                 ...digit,
                 visible: false,
-                nextChangeTime: now + 50 // Réapparaître dans exactement 50ms
+                nextChangeTime: now + 200 // Réapparaître dans exactement 200ms
               };
             } else {
               // Réapparaître à un nouvel endroit avec de nouvelles propriétés
               return {
                 ...digit,
-                value: Math.random() > 0.5 ? '1' : '0',
+                value: getRandomCharacter(),
                 top: Math.random() * 90 + 5,
                 left: Math.random() * 90 + 5,
                 opacity: Math.random() * 0.3 + 0.1,
                 size: ['text-xl', 'text-2xl', 'text-3xl'][Math.floor(Math.random() * 3)],
                 visible: true,
-                nextChangeTime: now + Math.random() * 200 + 100 // Rester visible 0.1s à 0.3s avant prochaine téléportation
+                nextChangeTime: now + Math.random() * 800 + 400 // Rester visible 0.4s à 1.2s avant prochaine téléportation
               };
             }
           }
           return digit;
         })
       );
-    }, 10); // Vérification toutes les 10ms
+    }, 300); // Vérification toutes les 300ms
 
     return () => clearInterval(interval);
   }, []);
@@ -81,11 +87,17 @@ const TeleportingBinaryDigits: React.FC = () => {
 
 // Composant pour les chiffres binaires qui se téléportent dans le menu étendu
 const TeleportingBinaryDigitsMenu: React.FC = () => {
+  // Tableau des caractères possibles : 0, 1, q, ℓ
+  const characters = ['0', '1', 'q', 'ℓ'];
+  
+  // Fonction pour générer un caractère aléatoire
+  const getRandomCharacter = () => characters[Math.floor(Math.random() * characters.length)];
+
   const [digits, setDigits] = React.useState(() => 
     Array.from({ length: 28 }, (_, i) => {
       return {
         id: i,
-        digit: Math.random() > 0.5 ? '1' : '0',
+        digit: getRandomCharacter(),
         top: Math.random() * 90 + 5,
         left: Math.random() * 90 + 5,
         size: ['text-xl', 'text-2xl', 'text-3xl'][Math.floor(Math.random() * 3)],
@@ -106,25 +118,25 @@ const TeleportingBinaryDigitsMenu: React.FC = () => {
               return {
                 ...digit,
                 visible: false,
-                nextChangeTime: now + 1000 // Réapparaître dans exactement 1 seconde
+                nextChangeTime: now + 3000 // Réapparaître dans exactement 3 secondes
               };
             } else {
               // Réapparaître à un nouvel endroit avec de nouvelles propriétés
               return {
                 ...digit,
-                digit: Math.random() > 0.5 ? '1' : '0',
+                digit: getRandomCharacter(),
                 top: Math.random() * 90 + 5,
                 left: Math.random() * 90 + 5,
                 size: ['text-xl', 'text-2xl', 'text-3xl'][Math.floor(Math.random() * 3)],
                 visible: true,
-                nextChangeTime: now + Math.random() * 2000 + 1000 // Rester visible 1s à 3s avant prochaine téléportation
+                nextChangeTime: now + Math.random() * 6000 + 4000 // Rester visible 4s à 10s avant prochaine téléportation
               };
             }
           }
           return digit;
         })
       );
-    }, 100); // Vérification toutes les 100ms
+    }, 500); // Vérification toutes les 500ms
 
     return () => clearInterval(interval);
   }, []);
