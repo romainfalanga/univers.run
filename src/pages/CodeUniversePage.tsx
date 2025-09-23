@@ -2,8 +2,28 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Code, Layers, Zap, Cpu, Binary, ArrowDown, Globe } from 'lucide-react';
 
+// Hook pour détecter si on est sur mobile
+const useIsMobile = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  
+  useEffect(() => {
+    const checkIsMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    checkIsMobile();
+    window.addEventListener('resize', checkIsMobile);
+    
+    return () => window.removeEventListener('resize', checkIsMobile);
+  }, []);
+  
+  return isMobile;
+};
+
 // Composant pour les chiffres binaires qui se téléportent
 const TeleportingBinaryDigits: React.FC = () => {
+  const isMobile = useIsMobile();
+  
   // Tableau des caractères possibles : 0, 1, q, ℓ
   const characters = ['0', '1', 'q', 'ℓ'];
   
@@ -40,7 +60,7 @@ const TeleportingBinaryDigits: React.FC = () => {
   };
 
   const [digits, setDigits] = React.useState(() => 
-    Array.from({ length: 28 }, (_, i) => {
+    Array.from({ length: isMobile ? 12 : 28 }, (_, i) => {
       // Génération initiale avec détection de collision
       const existingDigits: any[] = [];
       const position = generateSafePosition(existingDigits);
@@ -53,7 +73,7 @@ const TeleportingBinaryDigits: React.FC = () => {
         opacity: Math.random() * 0.3 + 0.1,
         size: ['text-xl', 'text-2xl', 'text-3xl'][Math.floor(Math.random() * 3)],
         visible: true,
-        nextChangeTime: Date.now() + Math.random() * 200 + 100 // 0.1s à 0.3s
+        nextChangeTime: Date.now() + Math.random() * (isMobile ? 800 : 200) + (isMobile ? 400 : 100)
       };
       
       existingDigits.push(newDigit);
@@ -73,7 +93,7 @@ const TeleportingBinaryDigits: React.FC = () => {
               return {
                 ...digit,
                 visible: false,
-                nextChangeTime: now + 200 // Réapparaître dans exactement 0.2 seconde
+                nextChangeTime: now + (isMobile ? 500 : 200)
               };
             } else {
               // Réapparaître à un nouvel endroit avec de nouvelles propriétés (sans collision)
@@ -87,17 +107,17 @@ const TeleportingBinaryDigits: React.FC = () => {
                 opacity: Math.random() * 0.3 + 0.1,
                 size: ['text-xl', 'text-2xl', 'text-3xl'][Math.floor(Math.random() * 3)],
                 visible: true,
-                nextChangeTime: now + Math.random() * 400 + 300 // Rester visible 0.3s à 0.7s avant prochaine téléportation
+                nextChangeTime: now + Math.random() * (isMobile ? 1200 : 400) + (isMobile ? 800 : 300)
               };
             }
           }
           return digit;
         })
       );
-    }, 150); // Vérification toutes les 150ms
+    }, isMobile ? 400 : 150); // Vérification plus lente sur mobile
 
     return () => clearInterval(interval);
-  }, []);
+  }, [isMobile]);
 
   return (
     <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -112,7 +132,7 @@ const TeleportingBinaryDigits: React.FC = () => {
             left: `${digit.left}%`,
             opacity: digit.visible ? digit.opacity : 0,
             color: '#00FF41',
-            textShadow: '0 0 10px #00FF41, 0 0 20px #00FF41, 0 0 30px #00FF41',
+            textShadow: isMobile ? '0 0 5px #00FF41' : '0 0 10px #00FF41, 0 0 20px #00FF41, 0 0 30px #00FF41',
             transform: 'translate(-50%, -50%)'
           }}
         >
@@ -127,6 +147,7 @@ const TeleportingBinaryDigitsMemo = React.memo(TeleportingBinaryDigits);
 
 export const CodeUniversePage: React.FC = () => {
   const location = useLocation();
+  const isMobile = useIsMobile();
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-indigo-900 relative overflow-hidden">
@@ -136,14 +157,18 @@ export const CodeUniversePage: React.FC = () => {
         {/* Effets d'arrière-plan améliorés */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900/30 via-transparent to-indigo-900/30 z-0"></div>
         
-        {/* Champ d'étoiles animé */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,rgba(120,119,198,0.3),transparent_50%),radial-gradient(circle_at_80%_20%,rgba(255,119,198,0.3),transparent_50%),radial-gradient(circle_at_40%_40%,rgba(120,219,255,0.2),transparent_50%)] animate-star-field z-0"></div>
+        {/* Champ d'étoiles animé - désactivé sur mobile */}
+        {!isMobile && (
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,rgba(120,119,198,0.3),transparent_50%),radial-gradient(circle_at_80%_20%,rgba(255,119,198,0.3),transparent_50%),radial-gradient(circle_at_40%_40%,rgba(120,219,255,0.2),transparent_50%)] animate-star-field z-0"></div>
+        )}
         
         {/* Grille quantique subtile */}
-        <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(147,51,234,0.03)_50%,transparent_75%)] bg-[length:80px_80px] animate-pulse opacity-60 z-0"></div>
+        <div className={`absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(147,51,234,0.03)_50%,transparent_75%)] bg-[length:80px_80px] opacity-60 z-0 ${!isMobile ? 'animate-pulse' : ''}`}></div>
         
-        {/* Effet de lueur cosmique */}
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500/5 to-transparent animate-cosmic-glow z-0"></div>
+        {/* Effet de lueur cosmique - désactivé sur mobile */}
+        {!isMobile && (
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500/5 to-transparent animate-cosmic-glow z-0"></div>
+        )}
         
         {/* Chiffres binaires téléportants */}
         <TeleportingBinaryDigitsMemo />

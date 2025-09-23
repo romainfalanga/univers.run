@@ -133,9 +133,11 @@ body {
     transition-duration: 0.15s !important;
   }
   
-  /* Désactive certaines animations coûteuses sur mobile */
+  /* Désactive les animations coûteuses sur mobile */
   .animate-gradient-x,
-  .animate-scan {
+  .animate-scan,
+  .animate-star-field,
+  .animate-cosmic-glow {
     animation: none !important;
   }
   
@@ -161,6 +163,20 @@ body {
   /* Limite les particules animées sur mobile */
   .animate-ping {
     animation-duration: 2s !important;
+  }
+  
+  /* Réduit les effets de text-shadow sur mobile */
+  .neon-glow,
+  .neon-text-cyan,
+  .neon-text-emerald {
+    text-shadow: 0 0 5px currentColor !important;
+  }
+  
+  /* Simplifie les bordures lumineuses sur mobile */
+  .glow-border-yellow,
+  .glow-border-red,
+  .glow-border-emerald {
+    box-shadow: 0 0 10px rgba(251, 191, 36, 0.2) !important;
   }
 }
 /* Animations futuristes pour la navigation */
