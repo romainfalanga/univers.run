@@ -97,7 +97,7 @@ export const LandingPage: React.FC = () => {
         navigate('/code-univers');
       }, 1500);
     } else {
-      setError(`Commande "${command}" non reconnue. Essayez "univers.run" ou "run univers"`);
+      setError(`Commande "${command}" inconnue"`);
       setCommand('');
     }
   };

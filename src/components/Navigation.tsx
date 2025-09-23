@@ -168,7 +168,7 @@ const TeleportingBinaryDigitsMenu: React.FC = () => {
 export const Navigation: React.FC = () => {
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [displayedText] = useState("L'univers est un jeu, alors amuse-toi");
+  const [displayedText] = useState("L'univers est un jeu, alors amuse-toi !");
   
   const navigationItems = [
     {
