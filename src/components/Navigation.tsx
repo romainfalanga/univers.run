@@ -228,9 +228,9 @@ export const Navigation: React.FC = () => {
   
   const navigationItems = [
     {
-      path: '/',
-      title: "L'univers est une application",
-      shortTitle: "L'univers est une application",
+      path: '/code-univers',
+      title: "Le code de l'univers",
+      shortTitle: "Le code de l'univers",
       gradient: 'from-indigo-500/20 to-violet-500/20',
       hoverGradient: 'hover:from-indigo-500/10 hover:to-violet-500/10',
       textColor: 'text-indigo-300',

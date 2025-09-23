@@ -1,0 +1,77 @@
+{
+  "name": "Univers.run",
+  "short_name": "Univers.run",
+  "description": "Explorez les mystères de l'univers à travers la physique théorique et la relativité",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1e1b4b",
+  "theme_color": "#1e1b4b",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "fr",
+  "categories": ["education", "science", "physics"],
+  "icons": [
+    {
+      "src": "/universrunlogo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/universrunlogo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/universrunlogo.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/universrunlogo.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Relativité Restreinte",
+      "short_name": "Relativité",
+      "description": "Calculateur de dilatation temporelle",
+      "url": "/relativity",
+      "icons": [
+        {
+          "src": "/universrunlogo.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Horizon des Événements",
+      "short_name": "Trou Noir",
+      "description": "Visualisation des trajectoires espace-temps",
+      "url": "/black-hole-concept",
+      "icons": [
+        {
+          "src": "/universrunlogo.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Le code de l'univers",
+      "short_name": "Code Univers",
+      "description": "L'analogie entre l'univers et une application",
+      "url": "/code-univers",
+      "icons": [
+        {
+          "src": "/universrunlogo.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
+}
