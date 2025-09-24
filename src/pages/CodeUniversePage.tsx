@@ -237,10 +237,7 @@ export const CodeUniversePage: React.FC = () => {
                   </div>
                   <div className="space-y-3 sm:space-y-4 text-xs sm:text-sm lg:text-base text-gray-200 leading-relaxed">
                     <p className="font-medium">
-                       Le tissu de l'espace-temps est le cadre fondamentale dans lequel l'univers prend forme. C'est la toile décrite par la relativité générale d'Einstein : un maillage invisible qui relie l'espace et le temps en une seule structure.
-                    </p>
-                    <p className="text-xs sm:text-sm text-gray-400 leading-relaxed">
-                      Sans ce cadre spatio-temporel, aucune particule ne pourrait se déplacer, aucune force ne pourrait s'exercer, et aucune échelle de la réalité physique ne pourrait exister ou interagir.
+                       Le tissu de l'espace-temps est le cadre fondamentale dans lequel la matière prend forme. C'est la toile décrite par la relativité générale d'Einstein : un maillage invisible qui relie l'espace et le temps en une seule structure.
                     </p>
                   </div>
                 </div>
@@ -257,16 +254,13 @@ export const CodeUniversePage: React.FC = () => {
                     <p className="font-medium">
                       L'appareil électronique est le support qui permet à l'interface de prendre forme : c'est le smartphone ou tout autre dispositif qui sert de support materiel au code et lui donne une existence concrète.
                     </p>
-                    <p className="text-xs sm:text-sm text-gray-400 leading-relaxed">
-                      Sans ce support matériel, aucun code ne pourrait s'exécuter, aucune compilation ne pourrait avoir lieu, et aucune interface utilisateur ne pourrait être générée ou affichée.
-                    </p>
                   </div>
                 </div>
               </div>
               
               <div className="mt-6 sm:mt-8 bg-gradient-to-r from-gray-900/60 to-slate-900/50 backdrop-blur-sm rounded-lg p-4 sm:p-6 border-l-4 border-gray-400">
                 <p className="text-xs sm:text-sm lg:text-base text-gray-200 leading-relaxed font-medium">
-                  <strong className="text-white">Point clé :</strong> Ces cadres supérieurs ne sont pas des "échelles" au sens où nous l'entendons dans la cascade qui suit. Ils sont les <strong className="text-gray-300">fondations invisibles</strong> qui permettent à toutes les échelles d'exister et d\'interagir. Dans l'analogie, le tissu de l\'espace-temps et l'appareil électronique jouent le même rôle : ils sont les <strong className="text-gray-300">environnements d\'exécution</strong> de leurs cascades respectives.
+                  <strong className="text-white">Point clé :</strong> Ces cadres supérieurs ne sont pas des "échelles" au sens où nous l'entendons dans la cascade qui suit. Ils sont les <strong className="text-gray-300">fondations invisibles</strong> qui permettent à toutes les échelles d'exister et d'interagir. Dans l'analogie, le tissu de l'espace-temps et l'appareil électronique jouent le même rôle : ils sont les <strong className="text-gray-300">environnements d'exécution</strong> de leurs cascades respectives.
                 </p>
               </div>
             </div>
@@ -364,7 +358,7 @@ export const CodeUniversePage: React.FC = () => {
                     À partir de l'échelle atomique (~10⁻¹⁰ m), tout change : nous entrons dans le domaine de la <strong className="text-purple-300">superposition quantique</strong>.
                   </p>
                   <p>
-                    <strong className="text-cyan-300">Dans l'univers :</strong> à cette échelle, les entités physiques (atomes, électrons, particules) existent dans plusieurs états à la fois. Dans l'<strong className="text-purple-300">expérience de la double fente</strong>, par exemple, un électron ou un atome passe simultanément par les deux fentes, créant des interférences avec lui-même. Leur existence est une <strong className="text-yellow-300">probabilité</strong> diffuse jusqu'à ce qu\'une observation ou une mesure "effondre" cette superposition en un état défini.
+                    <strong className="text-cyan-300">Dans l'univers :</strong> à cette échelle, les entités physiques (atomes, électrons, particules) existent dans plusieurs états à la fois. Dans l'<strong className="text-purple-300">expérience de la double fente</strong>, par exemple, un électron ou un atome passe simultanément par les deux fentes, créant des interférences avec lui-même. Leur existence est une <strong className="text-yellow-300">probabilité</strong> diffuse jusqu'à ce qu'une observation ou une mesure "effondre" cette superposition en un état défini.
                   </p>
                   <p>
                     <strong className="text-green-300">Dans l'application :</strong> En suivant cette logique, l'organisation des composants React qui produit le HTML et le CSS n'existe pas sous une forme unique et figée. Elle se déploie comme un ensemble de <strong className="text-yellow-300">probabilités</strong> d'agencements de composants possibles. Ce n'est qu'au moment où l'on observe cette organisation que les composants "choisissent" une configuration particulière.
@@ -472,7 +466,7 @@ De même, le JavaScript qui compose un composant React n'existe pas à l'avance 
                 <p className="text-xs sm:text-sm lg:text-base text-cyan-100 leading-relaxed font-medium">
                 <strong className="text-cyan-300">Chaque couche encapsule la précédente :</strong> L'interface utilisateur que nous voyons est générée par du HTML et du CSS, eux-mêmes issus des composants React, écrits en JavaScript. Ce JavaScript, à son niveau le plus fondamental, est composé de 0 et de 1.
 
-De la même façon, notre corps est constitué de molécules, elles-mêmes faites d'atomes, formés de nucléons, composés de particules fondamentales. <strong className="text-purple-300">Mais à partir de l\'échelle atomique, tout existe en superposition quantique jusqu'à ce qu\'on "regarde sous le capot".</strong>
+De la même façon, notre corps est constitué de molécules, elles-mêmes faites d'atomes, formés de nucléons, composés de particules fondamentales. <strong className="text-purple-300">Mais à partir de l'échelle atomique, tout existe en superposition quantique jusqu'à ce qu'on "regarde sous le capot".</strong>
                 </p>
               </div>
             </div>
