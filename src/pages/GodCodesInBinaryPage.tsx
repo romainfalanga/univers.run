@@ -457,7 +457,7 @@ export const GodCodesInBinaryPage: React.FC = () => {
             <div className="bg-gradient-to-r from-cyan-900/40 to-blue-900/30 backdrop-blur-sm rounded-lg p-4 sm:p-6 border-l-4 border-cyan-400 shadow-xl mb-4 sm:mb-6">
               <p className="text-sm sm:text-base lg:text-lg text-gray-200 leading-relaxed">
                 <strong className="text-cyan-300">Rappel de l'analogie : </strong> 
-                Dans "Le code de l'univers", nous avons vu que chaque composant de notre interface utilisateur (le monde macroscopique) est fait d'une cascade descendante vers toutes les couches inférieures, jusqu'aux bits binaires (0 et 1) à l'échelle des particules fondamentales. Chaque couche supérieure est la manifestation compilée des couches inférieures, et descendre d'échelle revient littéralement regarder sous le capot de l'échelle supérieur.
+                Dans "Le code de l'univers", nous avons vu que notre interface utilisateur (le monde macroscopique) est fait d'une cascade descendante vers toutes les couches inférieures, jusqu'aux bits binaires (0 et 1) à l'échelle des particules fondamentales. Chaque couche supérieure est la manifestation compilée des couches inférieures, et descendre d'échelle revient littéralement regarder sous le capot de l'échelle supérieur.
               </p>
             </div>
             
