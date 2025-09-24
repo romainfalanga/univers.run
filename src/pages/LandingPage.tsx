@@ -85,7 +85,8 @@ export const LandingPage: React.FC = () => {
       'launch',
       'execute univers',
       'npm run univers',
-      './univers.run'
+      './univers.run',
+      'univers run start'
     ];
 
     if (validCommands.includes(trimmedCommand)) {
@@ -134,10 +135,10 @@ export const LandingPage: React.FC = () => {
           {/* Phrase explicative poétique */}
           <div className="max-w-3xl mx-auto">
             <p className="text-xl sm:text-2xl lg:text-3xl text-gray-200 leading-relaxed font-light mb-4">
-              Dans le langage des machines, la commande <span className="text-cyan-300 font-semibold">run</span> sert à exécuter un programme.
+              Dans le langage des machines, la commande <span className="text-cyan-300 font-semibold">run start</span> sert à lancer un programme.
             </p>
             <p className="text-lg sm:text-xl lg:text-2xl text-purple-200 leading-relaxed font-light"> Tappez la commande
-              <span className="text-yellow-300 font-semibold"> npm run univers</span> 
+              <span className="text-yellow-300 font-semibold"> univers run start</span> 
             </p>
           </div>
         </div>
@@ -146,7 +147,7 @@ export const LandingPage: React.FC = () => {
         <div className="bg-black/80 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border-2 border-cyan-400/50 shadow-2xl max-w-2xl mx-auto">
           <div className="flex items-center mb-4">
             <Terminal className="w-6 h-6 text-cyan-400 mr-3" />
-            <span className="text-cyan-300 font-mono text-lg">Console Universelle</span>
+            <span className="text-cyan-300 font-mono text-lg">Console Quantique</span>
           </div>
           
           <form onSubmit={handleCommandSubmit} className="space-y-4">

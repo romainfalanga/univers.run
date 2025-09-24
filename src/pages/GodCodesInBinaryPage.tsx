@@ -485,14 +485,14 @@ export const GodCodesInBinaryPage: React.FC = () => {
             <div className="flex items-center mb-4 sm:mb-6">
               <Layers className="w-8 h-8 sm:w-10 sm:h-10 mr-3 text-emerald-400" />
               <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-emerald-300">
-                La Cascade inversé
+                La Cascade Inversé
               </h2>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
               <div className="space-y-4">
                 <h3 className="text-lg sm:text-xl font-bold text-emerald-200 mb-4">
-                  🌌 Cascade Universelle
+                  🌌 Cascade Universelle Inversé
                 </h3>
                 
                 <div className="space-y-3">
@@ -513,7 +513,7 @@ export const GodCodesInBinaryPage: React.FC = () => {
               
               <div className="space-y-4">
                 <h3 className="text-lg sm:text-xl font-bold text-emerald-200 mb-4">
-                  💻 Cascade Informatique
+                  💻 Cascade Informatique Inversé
                 </h3>
                 
                 <div className="space-y-3">
