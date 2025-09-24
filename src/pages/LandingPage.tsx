@@ -49,7 +49,7 @@ const FloatingParticles: React.FC = () => {
 
 export const LandingPage: React.FC = () => {
   const navigate = useNavigate();
-  const [command, setCommand] = useState('');
+  const [command, setCommand] = useState('univers run start');
   const [isTyping, setIsTyping] = useState(false);
   const [showCursor, setShowCursor] = useState(true);
   const [error, setError] = useState('');
@@ -98,7 +98,7 @@ export const LandingPage: React.FC = () => {
         navigate('/code-univers');
       }, 1500);
     } else {
-      setError(`Commande "${command}" inconnue"`);
+      setError(`Commande "${command}" inconnue`);
       setCommand('');
     }
   };
@@ -137,7 +137,7 @@ export const LandingPage: React.FC = () => {
             <p className="text-xl sm:text-2xl lg:text-3xl text-gray-200 leading-relaxed font-light mb-4">
               Dans le langage des machines, la commande <span className="text-cyan-300 font-semibold">run start</span> sert à lancer un programme.
             </p>
-            <p className="text-lg sm:text-xl lg:text-2xl text-purple-200 leading-relaxed font-light"> Tappez la commande
+            <p className="text-lg sm:text-xl lg:text-2xl text-purple-200 leading-relaxed font-light"> Lancez la commande
               <span className="text-yellow-300 font-semibold"> univers run start</span> 
             </p>
           </div>
@@ -163,9 +163,6 @@ export const LandingPage: React.FC = () => {
                   placeholder="Tapez votre commande"
                   disabled={isLoading}
                 />
-                {showCursor && !isLoading && (
-                  <span className="text-green-400 animate-pulse">|</span>
-                )}
                 {isLoading && (
                   <div className="flex items-center ml-2">
                     <div className="w-2 h-2 bg-green-400 rounded-full animate-ping mr-1"></div>
@@ -175,6 +172,91 @@ export const LandingPage: React.FC = () => {
                 )}
               </div>
             </div>
+            
+            {/* Bouton Entrée */}
+            {!isLoading && (
+              <div className="flex justify-center">
+                <button
+                  type="submit"
+                  disabled={isLoading}
+                  className="group relative bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 hover:from-cyan-700 hover:via-blue-700 hover:to-purple-700 disabled:from-gray-600 disabled:via-gray-700 disabled:to-gray-800 text-white rounded-xl px-8 py-3 shadow-2xl transition-all duration-500 transform hover:scale-105 active:scale-95 border-2 border-cyan-400/50 hover:border-cyan-300/70 disabled:border-gray-500/30 overflow-hidden"
+                >
+                  {/* Effet de lueur */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/20 via-blue-400/20 to-purple-400/20 rounded-xl blur-xl animate-pulse group-hover:blur-2xl transition-all duration-500"></div>
+                  
+                  {/* Particules flottantes */}
+                  <div className="absolute inset-0 overflow-hidden rounded-xl">
+                    {[...Array(6)].map((_, i) => (
+                      <div
+                        key={i}
+                        className="absolute w-1 h-1 bg-cyan-300 rounded-full animate-ping opacity-60 group-hover:opacity-90"
+                        style={{
+                          top: `${Math.random() * 100}%`,
+                          left: `${Math.random() * 100}%`,
+                          animationDelay: `${Math.random() * 2}s`,
+                          animationDuration: `${1 + Math.random() * 1}s`
+                        }}
+                      />
+                    ))}
+                  </div>
+                  
+                  {/* Effet de scan */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-1000 animate-scan rounded-xl"></div>
+                  
+                  {/* Contenu du bouton */}
+                  <div className="relative z-10 flex items-center justify-center">
+                    <span className="text-lg font-bold group-hover:text-cyan-100 transition-colors duration-300 drop-shadow-[0_0_10px_rgba(255,255,255,0.6)]">
+                      Entrée
+                    </span>
+                  </div>
+                  
+                  {/* Bordure lumineuse animée */}
+                  <div className="absolute -inset-2 bg-gradient-to-r from-cyan-400/30 via-blue-400/30 to-purple-400/30 rounded-xl opacity-30 blur-lg animate-pulse group-hover:opacity-60 group-hover:blur-xl transition-all duration-500"></div>
+                </button>
+              </div>
+            )}
+            
+            {error && (
+              <div className="flex justify-center">
+                <button
+                  type="submit"
+                  disabled={isLoading}
+                  className="group relative bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 hover:from-cyan-700 hover:via-blue-700 hover:to-purple-700 disabled:from-gray-600 disabled:via-gray-700 disabled:to-gray-800 text-white rounded-xl px-8 py-3 shadow-2xl transition-all duration-500 transform hover:scale-105 active:scale-95 border-2 border-cyan-400/50 hover:border-cyan-300/70 disabled:border-gray-500/30 overflow-hidden"
+                >
+                  {/* Effet de lueur */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/20 via-blue-400/20 to-purple-400/20 rounded-xl blur-xl animate-pulse group-hover:blur-2xl transition-all duration-500"></div>
+                  
+                  {/* Particules flottantes */}
+                  <div className="absolute inset-0 overflow-hidden rounded-xl">
+                    {[...Array(6)].map((_, i) => (
+                      <div
+                        key={i}
+                        className="absolute w-1 h-1 bg-cyan-300 rounded-full animate-ping opacity-60 group-hover:opacity-90"
+                        style={{
+                          top: `${Math.random() * 100}%`,
+                          left: `${Math.random() * 100}%`,
+                          animationDelay: `${Math.random() * 2}s`,
+                          animationDuration: `${1 + Math.random() * 1}s`
+                        }}
+                      />
+                    ))}
+                  </div>
+                  
+                  {/* Effet de scan */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-1000 animate-scan rounded-xl"></div>
+                  
+                  {/* Contenu du bouton */}
+                  <div className="relative z-10 flex items-center justify-center">
+                    <span className="text-lg font-bold group-hover:text-cyan-100 transition-colors duration-300 drop-shadow-[0_0_10px_rgba(255,255,255,0.6)]">
+                      Entrée
+                    </span>
+                  </div>
+                  
+                  {/* Bordure lumineuse animée */}
+                  <div className="absolute -inset-2 bg-gradient-to-r from-cyan-400/30 via-blue-400/30 to-purple-400/30 rounded-xl opacity-30 blur-lg animate-pulse group-hover:opacity-60 group-hover:blur-xl transition-all duration-500"></div>
+                </button>
+              </div>
+            )}
             
             {error && (
               <div className="bg-red-900/50 border border-red-500/50 rounded-lg p-3">
@@ -194,14 +276,6 @@ export const LandingPage: React.FC = () => {
           
           {/* Suggestions de commandes */}
           
-        </div>
-
-        {/* Instructions subtiles */}
-        <div className="mt-8 text-gray-400 text-sm">
-          <p className="flex items-center justify-center">
-            <Play className="w-4 h-4 mr-2" />
-            Appuyez sur Entrée pour exécuter votre commande
-          </p>
         </div>
       </div>
 

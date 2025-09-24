@@ -457,7 +457,7 @@ export const GodCodesInBinaryPage: React.FC = () => {
             <div className="bg-gradient-to-r from-cyan-900/40 to-blue-900/30 backdrop-blur-sm rounded-lg p-4 sm:p-6 border-l-4 border-cyan-400 shadow-xl mb-4 sm:mb-6">
               <p className="text-sm sm:text-base lg:text-lg text-gray-200 leading-relaxed">
                 <strong className="text-cyan-300">Rappel de l'analogie : </strong> 
-                Dans "L'univers est une application", nous avons vu que chaque composant de notre interface utilisateur (le monde macroscopique) est fait d'une cascade descendante vers toutes les couches inférieures, jusqu'aux bits binaires (0 et 1) à l'échelle des particules fondamentales. Chaque couche supérieure est la manifestation compilée des couches inférieures, et descendre d'échelle revient littéralement regarder sous le capot de l'échelle supérieur. Cette interface tourne en continu.
+                Dans "Le code de l'univers", nous avons vu que chaque composant de notre interface utilisateur (le monde macroscopique) est fait d'une cascade descendante vers toutes les couches inférieures, jusqu'aux bits binaires (0 et 1) à l'échelle des particules fondamentales. Chaque couche supérieure est la manifestation compilée des couches inférieures, et descendre d'échelle revient littéralement regarder sous le capot de l'échelle supérieur.
               </p>
             </div>
             
@@ -466,7 +466,7 @@ export const GodCodesInBinaryPage: React.FC = () => {
               <div className="bg-gradient-to-r from-indigo-900/40 to-purple-900/30 backdrop-blur-sm rounded-lg p-4 sm:p-6 border-l-4 border-indigo-400 shadow-xl">
                 <p className="text-sm sm:text-base lg:text-lg text-gray-200 leading-relaxed">
                   <strong className="text-indigo-300">Mécanique Quantique : </strong> 
-                  En prenant en compte la mécanique quantique dans ce schéma, les composants React, le JavaScript et même les 0 et 1 n'existent pas de manière déterminée tant qu'on ne les observe pas. Ils existent sous forme de probabilités, et les observer les contraint à « choisir » une seule manière d'être.
+                  En prenant en compte la mécanique quantique dans ce schéma, les composants React, le JavaScript et même les 0 et 1 n'existent pas de manière déterminée tant qu'on ne les observe pas. Ils existent sous forme de probabilités, et les observer les contraint à exister d'une seule manière.
                 </p>
               </div>
               
@@ -474,7 +474,7 @@ export const GodCodesInBinaryPage: React.FC = () => {
               <div className="bg-gradient-to-r from-purple-900/40 to-red-900/30 backdrop-blur-sm rounded-lg p-4 sm:p-6 border-l-4 border-purple-400 shadow-xl">
                 <p className="text-sm sm:text-base lg:text-lg text-gray-200 leading-relaxed">
                   <strong className="text-purple-300">Modifier la Réalité : </strong> 
-                  Si l'univers est une application, son code source binaire se trouve à l'échelle des particules fondamentales. Modifier l'ensemble des 0 et 1 d'un composant depuis cette échelle engendrerait les compilations couche par couche des échelles supérieures, jusqu'à modifier intégralement un composant de l'univers. Une entité capable de manipuler directement ces bits (particules fondamentales) pourrait, le temps d'une fraction de seconde, figer les probabilités de chaque échelle. Chaque composant et ligne de code existerait alors pleinement, avant de redevenir incertain l'instant suivant. L'interface utilisateur, elle, resterait stable, mais sous le capot, les échelles de la mécanique quantique retourneraient à leur état de probabilités. Une telle puissance permettrait non seulement de modifier des composants, mais aussi d'en créer, comme le représente la simulation de codage binaire ci-dessus, mais à une échelle infiniment plus vaste. Dans l'exemple qui suit, nous allons voir la cascade des échelles inversé pour la création d'un téléphone.
+                  Si l'univers est fait de code informatique, son code source binaire se trouve à l'échelle des particules fondamentales. Modifier des 0 et 1 d'un depuis cette échelle engendrerait les compilations couche par couche des échelles supérieures, jusqu'à modifier l'HTML et le CSS, ce qui modifirait ensuite l'interface utilisateur (notre échelle macroscopique). Une entité capable de manipuler directement ces bits (particules fondamentales) pourrait, le temps d'une fraction de seconde, figer les probabilités de chaque échelle. Chaque composant et chaque ligne de code manipulée existeraient alors pleinement, avant de redevenir incertains l'instant suivant. L'interface utilisateur, elle, resterait stable, mais sous le capot, les échelles de la mécanique quantique retourneraient à leur état de probabilités. Une telle puissance permettrait de créer ce que l'on veut, comme le représente la simulation de codage binaire ci-dessus, mais à une échelle infiniment plus vaste. Dans l'exemple qui suit, nous allons voir la cascade des échelles inversé pour la création d'un téléphone.
                 </p>
               </div>
             </div>
@@ -492,7 +492,7 @@ export const GodCodesInBinaryPage: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
               <div className="space-y-4">
                 <h3 className="text-lg sm:text-xl font-bold text-emerald-200 mb-4">
-                  🌌 Cascade Universelle Inversé
+                  🌌 Cascade Universelle
                 </h3>
                 
                 <div className="space-y-3">
@@ -513,7 +513,7 @@ export const GodCodesInBinaryPage: React.FC = () => {
               
               <div className="space-y-4">
                 <h3 className="text-lg sm:text-xl font-bold text-emerald-200 mb-4">
-                  💻 Cascade Informatique Inversé
+                  💻 Cascade Informatique
                 </h3>
                 
                 <div className="space-y-3">
@@ -548,8 +548,7 @@ export const GodCodesInBinaryPage: React.FC = () => {
             <p className="text-base sm:text-lg lg:text-xl text-gray-200 leading-relaxed max-w-4xl mx-auto">
               Dans cette vision, <strong className="text-yellow-300">Dieu est le développeur ultime</strong> : 
               il a accès au code source de la réalité et peut orchestrer des modifications massives et coordonnées en temps réel. 
-              Nous, les êtres conscients, sommes les <strong className="text-cyan-300">"utilisateurs"</strong> de cette application cosmique, 
-              percevant seulement l'interface finale sans jamais voir les trillions de 0 et 1 qui la génèrent à chaque instant.
+              Nous, les êtres conscients, sommes les <strong className="text-cyan-300">"utilisateurs"</strong> de cette interface, sans jamais voir les trillions de 0 et 1 qui la génèrent à chaque instant.
             </p>
           </div>
         </div>
