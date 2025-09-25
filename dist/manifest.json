@@ -61,17 +61,5 @@
         }
       ]
     },
-    {
-      "name": "Le code de l'univers",
-      "short_name": "Code Univers",
-      "description": "L'analogie entre l'univers et une application",
-      "url": "/code-univers",
-      "icons": [
-        {
-          "src": "/universrunlogo.png",
-          "sizes": "96x96"
-        }
-      ]
-    }
   ]
 }

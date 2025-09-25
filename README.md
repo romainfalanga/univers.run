@@ -75,6 +75,9 @@ dist/                   # Build de production (généré)
 - `/` - L'univers est une application
 - `/relativity` - Calculateur de relativité restreinte  
 - `/black-hole-concept` - Horizon des événements
+- `/code-univers` - Le code de l'univers
+- `/quantum-lab` - Laboratoire Quantique
+- `/scale-lab` - Laboratoire des Échelles
 
 ## 🔬 Concepts Physiques
 

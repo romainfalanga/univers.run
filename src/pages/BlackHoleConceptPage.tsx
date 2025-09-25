@@ -10,8 +10,8 @@ export const BlackHoleConceptPage: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-black">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8 pt-4 sm:pt-6">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-black pt-24 sm:pt-28">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8 pt-8 sm:pt-10">
         {/* En-tête */}
         <header className="text-center mb-6 sm:mb-8 lg:mb-12">
           <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-purple-300 via-gray-300 via-black to-purple-300 bg-clip-text text-transparent bg-[length:400%_400%] animate-gradient-x drop-shadow-[0_0_30px_rgba(147,51,234,0.8)] mb-3 sm:mb-4 px-2 whitespace-nowrap">
