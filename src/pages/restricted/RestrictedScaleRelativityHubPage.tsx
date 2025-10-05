@@ -48,14 +48,6 @@ export const RestrictedScaleRelativityHubPage: React.FC = () => {
       colorFrom: "from-red-900/40",
       colorTo: "to-orange-900/30",
       borderColor: "border-red-400"
-    },
-    {
-      title: "La Liberté Spatiale",
-      description: "Les contraintes du modèle et le moteur immuable",
-      path: "/relativite-restreinte-echelles/liberte-spatiale",
-      colorFrom: "from-purple-900/40",
-      colorTo: "to-indigo-900/30",
-      borderColor: "border-purple-400"
     }
   ];
 

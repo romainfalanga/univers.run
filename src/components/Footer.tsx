@@ -12,7 +12,7 @@ export const Footer: React.FC = () => {
 
   const sections = [
     {
-      title: "Tissu d'Espace-Temps d'Échelle",
+      title: "Tissu d'Espace-Temps-d'Échelle",
       path: "/tissu-espace-temps-echelle",
       colorFrom: "from-emerald-900/40",
       colorTo: "to-teal-900/30",
@@ -30,10 +30,10 @@ export const Footer: React.FC = () => {
       borderColor: "border-cyan-400",
       subPages: [
         { title: "Le Budget Universel", path: "/relativite-restreinte-echelles/budget-universel" },
+        { title: "Le Pivot Temporel", path: "/relativite-restreinte-echelles/pivot-temporel" },
         { title: "Le Tapis Roulant", path: "/relativite-restreinte-echelles/tapis-roulant" },
         { title: "Situation : Presque Immobile", path: "/relativite-restreinte-echelles/immobile" },
-        { title: "Situation : Vitesse Extrême", path: "/relativite-restreinte-echelles/vitesse-extreme" },
-        { title: "La Liberté Spatiale", path: "/relativite-restreinte-echelles/liberte-spatiale" }
+        { title: "Situation : Vitesse Extrêmement Rapide", path: "/relativite-restreinte-echelles/vitesse-extreme" }
       ]
     },
     {
@@ -48,30 +48,26 @@ export const Footer: React.FC = () => {
       ]
     },
     {
-      title: "Relativité des Échelles",
+      title: "Les Tapis Roulants",
       path: "/relativite-echelles-final",
-      colorFrom: "from-indigo-900/40",
+      colorFrom: "from-purple-900/40",
       colorTo: "to-pink-900/30",
-      borderColor: "border-indigo-400",
-      subPages: [
-        { title: "Un Seul Moteur, Multiples Inclinaisons", path: "/relativite-echelles-final/moteur-universel" },
-        { title: "Le Tapis Roulant Unifié", path: "/relativite-echelles-final/tapis-roulant" },
-        { title: "La Formule de la Relativité des Échelles", path: "/relativite-echelles-final/formule" }
-      ]
+      borderColor: "border-purple-400",
+      subPages: []
     },
     {
-      title: "Expériences de Pensée",
+      title: "Le Musée des Dimensions",
       path: "/experiences-pensee-echelles",
       colorFrom: "from-orange-900/40",
       colorTo: "to-red-900/30",
       borderColor: "border-orange-400",
       subPages: [
-        { title: "Le Musée des Dimensions", path: "/experiences-pensee-echelles/musee-dimensions" },
-        { title: "Les Tapis Roulants Universels", path: "/experiences-pensee-echelles/tapis-roulants" }
+        { title: "L'Entrée du Musée", path: "/experiences-pensee-echelles/entree-musee" },
+        { title: "La Première Pièce", path: "/experiences-pensee-echelles/premiere-piece" }
       ]
     },
     {
-      title: "L'Expansion Interne",
+      title: "L'Expansion",
       path: "/expansion-interne",
       colorFrom: "from-indigo-900/40",
       colorTo: "to-purple-900/30",
@@ -79,7 +75,6 @@ export const Footer: React.FC = () => {
       subPages: [
         { title: "L'Illusion de l'Expansion", path: "/expansion-interne/illusion-expansion" },
         { title: "La Loi de Hubble Réinterprétée", path: "/expansion-interne/loi-hubble" },
-        { title: "Le Rayonnement Cosmique", path: "/expansion-interne/rayonnement-cosmique" },
         { title: "L'Énergie Sombre Réexaminée", path: "/expansion-interne/energie-sombre" }
       ]
     },

@@ -16,12 +16,12 @@ import { GeneralScaleRelativityPage } from './pages/GeneralScaleRelativityPage';
 import { ThoughtExperimentsScalePage } from './pages/ThoughtExperimentsScalePage';
 import { BlackHolesScalePage } from './pages/BlackHolesScalePage';
 import { BlackHolesHubPage, CreationPage, PassagePage, WhyNoReturnPage, QuantumUniverseSizePage, InternalUniversesPage, HarmonyDescentPage, SingularityPage, EventHorizonPage, InvisibilityPage, BehindHorizonPage } from './pages/blackholes';
-import { RestrictedScaleRelativityHubPage, UniversalBudgetPage, ImmobileStatePage, ExtremSpeedPage, SpatialFreedomPage, PivotTemporelPage, TapisRoulantRestrictedPage } from './pages/restricted';
+import { RestrictedScaleRelativityHubPage, UniversalBudgetPage, ImmobileStatePage, ExtremSpeedPage, PivotTemporelPage, TapisRoulantRestrictedPage } from './pages/restricted';
 import { GeneralScaleRelativityHubPage, UniversalEscalatorPage, EnvironmentsPage } from './pages/general';
-import { ThoughtExperimentsHubPage, DimensionsMuseumPage, UniversalTreadmillsPage } from './pages/experiments';
-import { ExpansionHubPage, IllusionExpansionPage, HubbleLawPage, CosmicRadiationPage, DarkEnergyPage } from './pages/expansion';
+import { DimensionsMuseumPage, MuseumEntrancePage, FirstRoomPage } from './pages/experiments';
+import { ExpansionHubPage, IllusionExpansionPage, HubbleLawPage, DarkEnergyPage } from './pages/expansion';
 import { SuperpositionTissusPage, TapisRoulantFabricPage } from './pages/fabric';
-import { ScaleRelativityHubPage, UniversalMotorPage, UnifiedTreadmillPage, FormulaPage } from './pages/scale';
+import { TreadmillsHubPage } from './pages/scale';
 
 const AppContent: React.FC = () => {
 
@@ -51,27 +51,22 @@ const AppContent: React.FC = () => {
         <Route path="/relativite-restreinte-echelles/tapis-roulant" element={<TapisRoulantRestrictedPage />} />
         <Route path="/relativite-restreinte-echelles/immobile" element={<ImmobileStatePage />} />
         <Route path="/relativite-restreinte-echelles/vitesse-extreme" element={<ExtremSpeedPage />} />
-        <Route path="/relativite-restreinte-echelles/liberte-spatiale" element={<SpatialFreedomPage />} />
 
         <Route path="/relativite-generale-echelles-old" element={<GeneralScaleRelativityPage />} />
         <Route path="/relativite-generale-echelles" element={<GeneralScaleRelativityHubPage />} />
         <Route path="/relativite-generale-echelles/escalator-universel" element={<UniversalEscalatorPage />} />
         <Route path="/relativite-generale-echelles/environnements" element={<EnvironmentsPage />} />
 
-        <Route path="/relativite-echelles-final" element={<ScaleRelativityHubPage />} />
-        <Route path="/relativite-echelles-final/moteur-universel" element={<UniversalMotorPage />} />
-        <Route path="/relativite-echelles-final/tapis-roulant" element={<UnifiedTreadmillPage />} />
-        <Route path="/relativite-echelles-final/formule" element={<FormulaPage />} />
+        <Route path="/relativite-echelles-final" element={<TreadmillsHubPage />} />
 
         <Route path="/experiences-pensee-echelles-old" element={<ThoughtExperimentsScalePage />} />
-        <Route path="/experiences-pensee-echelles" element={<ThoughtExperimentsHubPage />} />
-        <Route path="/experiences-pensee-echelles/musee-dimensions" element={<DimensionsMuseumPage />} />
-        <Route path="/experiences-pensee-echelles/tapis-roulants" element={<UniversalTreadmillsPage />} />
+        <Route path="/experiences-pensee-echelles" element={<DimensionsMuseumPage />} />
+        <Route path="/experiences-pensee-echelles/entree-musee" element={<MuseumEntrancePage />} />
+        <Route path="/experiences-pensee-echelles/premiere-piece" element={<FirstRoomPage />} />
         
         <Route path="/expansion-interne" element={<ExpansionHubPage />} />
         <Route path="/expansion-interne/illusion-expansion" element={<IllusionExpansionPage />} />
         <Route path="/expansion-interne/loi-hubble" element={<HubbleLawPage />} />
-        <Route path="/expansion-interne/rayonnement-cosmique" element={<CosmicRadiationPage />} />
         <Route path="/expansion-interne/energie-sombre" element={<DarkEnergyPage />} />
         
         <Route path="/trous-noirs-echelles-old" element={<BlackHolesScalePage />} />

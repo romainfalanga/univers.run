@@ -18,7 +18,8 @@ export const Navigation: React.FC = () => {
              location.pathname.startsWith('/experiences-pensee-echelles') ||
              location.pathname.startsWith('/trous-noirs-echelles') ||
              location.pathname.startsWith('/expansion-interne') ||
-             location.pathname.startsWith('/tissu-espace-temps-echelle');
+             location.pathname.startsWith('/tissu-espace-temps-echelle') ||
+             location.pathname.startsWith('/relativite-echelles-final');
     }
 
     return false;

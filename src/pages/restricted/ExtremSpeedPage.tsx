@@ -138,13 +138,7 @@ export const ExtremSpeedPage: React.FC = () => {
               <ArrowLeft className="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform" />
               Précédent
             </Link>
-            <Link
-              to="/relativite-restreinte-echelles/liberte-spatiale"
-              className="group flex items-center px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
-            >
-              Suivant
-              <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-            </Link>
+            <div className="w-32"></div>
           </div>
 
         </div>

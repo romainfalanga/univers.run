@@ -192,41 +192,73 @@ export const ScaleRelativityPage: React.FC = () => {
             </div>
           </div>
 
-          {/* Section Expériences de Pensée */}
-          <div className="bg-gradient-to-br from-orange-900/40 to-red-900/30 backdrop-blur-sm rounded-xl lg:rounded-2xl p-6 sm:p-8 border border-orange-400/30 shadow-2xl">
+          {/* Section Les Tapis Roulants */}
+          <div className="bg-gradient-to-br from-purple-900/40 to-pink-900/30 backdrop-blur-sm rounded-xl lg:rounded-2xl p-6 sm:p-8 border border-purple-400/30 shadow-2xl">
             <div className="mb-4 sm:mb-6">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-300 mb-4">
-                Les Expériences de Pensée
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-purple-300 mb-4">
+                Les Tapis Roulants
               </h2>
             </div>
-            
+
             <div className="space-y-4 sm:space-y-6">
-              <div className="bg-orange-900/20 p-4 sm:p-6 rounded-lg border-l-4 border-orange-400">
-                <h3 className="text-lg sm:text-xl font-semibold text-orange-200 mb-3">Le Musée des Dimensions</h3>
+              <div className="bg-purple-900/20 p-4 sm:p-6 rounded-lg border-l-4 border-purple-400">
+                <h3 className="text-lg sm:text-xl font-semibold text-purple-200 mb-3">Le Mécanisme Universel</h3>
                 <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-                  Imagine que tu es dans le musée des dimensions. Il est fait de plusieurs pièces qui ont des formes de couloir. Dans la première pièce, tu découvres un tapis roulant qui révèle la cinquième dimension...
+                  Tout ce qui existe dans l'univers voyage sur son propre tapis roulant invisible à travers les cinq dimensions. <strong className="text-white">La vitesse est la même pour tous : la vitesse de la lumière</strong>. Seule l'inclinaison diffère selon la vitesse spatiale et l'environnement gravitationnel.
                 </p>
               </div>
-              
-              <div className="bg-red-900/20 p-4 sm:p-6 rounded-lg border-l-4 border-red-400">
-                <h3 className="text-lg sm:text-xl font-semibold text-red-200 mb-3">Les Tapis Roulants Universels</h3>
+
+              <div className="bg-pink-900/20 p-4 sm:p-6 rounded-lg border-l-4 border-pink-400">
+                <h3 className="text-lg sm:text-xl font-semibold text-pink-200 mb-3">La Visualisation Unifiée</h3>
                 <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-                  Tout ce qui est dans l'univers voyage sur son propre tapis roulant invisible. La vitesse est la même pour tous : <strong className="text-white">la vitesse de la lumière</strong>. Seule l'inclinaison diffère selon la vitesse, la masse et l'énergie.
+                  Cette page offre une visualisation complète et unifiée du mécanisme des tapis roulants : comment la relativité restreinte et la relativité générale se combinent pour créer l'inclinaison personnalisée de chaque objet dans l'univers.
                 </p>
               </div>
-              
+
               <div className="flex justify-center mt-6">
                 <Link
-                  to="/experiences-pensee-echelles"
-                  className="group flex items-center justify-center px-6 py-3 bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-500 hover:to-red-500 hover:shadow-orange-500/25 text-white rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
+                  to="/relativite-echelles-final"
+                  className="group flex items-center justify-center px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 hover:shadow-purple-500/25 text-white rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
                 >
-                  Les Expériences de Pensée
+                  Les Tapis Roulants
                 </Link>
               </div>
             </div>
           </div>
 
-          {/* Section Les Trous Noirs */}
+          {/* Section Le Musée des Dimensions */}
+          <div className="bg-gradient-to-br from-orange-900/40 to-red-900/30 backdrop-blur-sm rounded-xl lg:rounded-2xl p-6 sm:p-8 border border-orange-400/30 shadow-2xl">
+            <div className="mb-4 sm:mb-6">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-300 mb-4">
+                Le Musée des Dimensions
+              </h2>
+            </div>
+
+            <div className="space-y-4 sm:space-y-6">
+              <div className="bg-orange-900/20 p-4 sm:p-6 rounded-lg border-l-4 border-orange-400">
+                <h3 className="text-lg sm:text-xl font-semibold text-orange-200 mb-3">Une Expérience de Pensée Visuelle</h3>
+                <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
+                  Imagine que tu entres dans un musée où chaque pièce révèle une dimension cachée de la réalité. <strong className="text-white">Le Musée des Dimensions est une expérience de pensée puissante</strong> qui rend l'abstrait concret et te permet de voir la cinquième dimension de tes propres yeux.
+                </p>
+              </div>
+
+              <div className="bg-red-900/20 p-4 sm:p-6 rounded-lg border-l-4 border-red-400">
+                <h3 className="text-lg sm:text-xl font-semibold text-red-200 mb-3">Le Voyage à Travers les Pièces</h3>
+                <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
+                  Commence par franchir l'entrée du musée, puis explore la première pièce où un tapis roulant révèle la différence entre un univers en quatre dimensions et un univers en cinq dimensions.
+                </p>
+              </div>
+
+              <div className="flex justify-center mt-6">
+                <Link
+                  to="/experiences-pensee-echelles"
+                  className="group flex items-center justify-center px-6 py-3 bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-500 hover:to-red-500 hover:shadow-orange-500/25 text-white rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
+                >
+                  Le Musée des Dimensions
+                </Link>
+              </div>
+            </div>
+          </div>
 
           {/* Section L'Expansion */}
           <div className="bg-gradient-to-br from-indigo-900/40 to-purple-900/30 backdrop-blur-sm rounded-xl lg:rounded-2xl p-6 sm:p-8 border border-indigo-400/30 shadow-2xl">
@@ -248,13 +280,6 @@ export const ScaleRelativityPage: React.FC = () => {
                 <h3 className="text-lg sm:text-xl font-semibold text-purple-200 mb-3">La Loi de Hubble Réinterprétée</h3>
                 <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
                   La constante de Hubble — 70 km/s par mégaparsec — n'est que <strong className="text-white">la traduction visible de cette réduction d'échelle par seconde</strong>. Plus une galaxie est loin, plus le rayonnement cumulé a incliné nos tapis roulants.
-                </p>
-              </div>
-              
-              <div className="bg-gradient-to-r from-orange-900/40 to-red-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-orange-400">
-                <h3 className="text-lg sm:text-xl font-semibold text-orange-200 mb-3">Le Rayonnement Cosmique</h3>
-                <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-                  Le rayonnement agit comme une pression permanente qui incline le tapis roulant partout dans l'univers. <strong className="text-white">Plus une région reçoit de rayonnement, plus son tapis roulant s'incline</strong>.
                 </p>
               </div>
               

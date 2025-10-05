@@ -26,14 +26,6 @@ export const ExpansionHubPage: React.FC = () => {
       borderColor: "border-purple-400"
     },
     {
-      title: "Le Rayonnement Cosmique",
-      description: "La pression lumineuse comme moteur de contraction universelle",
-      path: "/expansion-interne/rayonnement-cosmique",
-      colorFrom: "from-orange-900/40",
-      colorTo: "to-red-900/30",
-      borderColor: "border-orange-400"
-    },
-    {
       title: "L'Énergie Sombre Réexaminée",
       description: "Une explication alternative à l'accélération de l'expansion",
       path: "/expansion-interne/energie-sombre",

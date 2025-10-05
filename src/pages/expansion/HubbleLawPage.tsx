@@ -93,8 +93,8 @@ export const HubbleLawPage: React.FC = () => {
               Précédent
             </Link>
             <Link
-              to="/expansion-interne/rayonnement-cosmique"
-              className="group flex items-center px-6 py-3 bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-500 hover:to-red-500 text-white rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
+              to="/expansion-interne/energie-sombre"
+              className="group flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
               Suivant
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
