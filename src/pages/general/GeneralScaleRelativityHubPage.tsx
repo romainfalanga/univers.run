@@ -10,8 +10,8 @@ export const GeneralScaleRelativityHubPage: React.FC = () => {
 
   const navigationCards = [
     {
-      title: "Le Tapis roulant",
-      description: "Comment la masse et l'énergie inclinent le tapis roulant cosmique",
+      title: "Les Tapis roulants",
+      description: "Comment la masse et l'énergie inclinent les tapis roulants",
       path: "/relativite-generale-echelles/escalator-universel",
       colorFrom: "from-purple-900/40",
       colorTo: "to-indigo-900/30",

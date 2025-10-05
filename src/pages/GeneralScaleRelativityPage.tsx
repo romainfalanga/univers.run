@@ -30,7 +30,7 @@ export const GeneralScaleRelativityPage: React.FC = () => {
             Relativité Générale des Échelles
           </h1>
           <p className="text-base sm:text-lg lg:text-xl text-purple-200/90 max-w-4xl mx-auto px-4 leading-relaxed">
-            Comment la masse et l'énergie inclinent l'escalator universel
+            Comment la masse et l'énergie inclinent les tapis roulants
           </p>
         </header>
 
@@ -39,7 +39,7 @@ export const GeneralScaleRelativityPage: React.FC = () => {
           
           {/* L'escalator universel */}
           <div className="bg-white/10 backdrop-blur-sm rounded-xl lg:rounded-2xl p-6 sm:p-8 border border-white/20 shadow-2xl">
-            <h2 className="text-2xl sm:text-3xl font-bold text-purple-300 mb-4 sm:mb-6">L'Escalator Universel</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-purple-300 mb-4 sm:mb-6">Les tapis roulants</h2>
             
             <div className="space-y-4 sm:space-y-6">
               <div className="bg-gradient-to-r from-purple-900/40 to-indigo-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-purple-400">

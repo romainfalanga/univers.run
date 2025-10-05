@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 export const TapisRoulantRestrictedPage: React.FC = () => {
   React.useEffect(() => {
@@ -25,7 +25,7 @@ export const TapisRoulantRestrictedPage: React.FC = () => {
 
         <header className="text-center mb-6 sm:mb-8 lg:mb-12">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-cyan-300 via-blue-300 to-indigo-300 bg-clip-text text-transparent bg-[length:400%_400%] animate-gradient-x drop-shadow-[0_0_30px_rgba(6,182,212,0.8)] mb-3 sm:mb-4 px-2">
-            Le Tapis Roulant Universel
+            Les Tapis Roulants
           </h1>
           <p className="text-base sm:text-lg lg:text-xl text-cyan-200/90 max-w-4xl mx-auto px-4 leading-relaxed">
             Le mécanisme fondamental du mouvement dans l'univers
@@ -100,6 +100,23 @@ export const TapisRoulantRestrictedPage: React.FC = () => {
               </div>
 
             </div>
+          </div>
+
+          <div className="flex justify-between items-center">
+            <Link
+              to="/relativite-restreinte-echelles/pivot-temporel"
+              className="group flex items-center px-6 py-3 bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-500 hover:to-gray-600 text-white rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
+            >
+              <ArrowLeft className="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform" />
+              Précédent
+            </Link>
+            <Link
+              to="/relativite-restreinte-echelles/immobile"
+              className="group flex items-center px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
+            >
+              Suivant
+              <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+            </Link>
           </div>
 
         </div>

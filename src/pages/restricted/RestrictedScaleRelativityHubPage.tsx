@@ -26,7 +26,7 @@ export const RestrictedScaleRelativityHubPage: React.FC = () => {
       borderColor: "border-indigo-400"
     },
     {
-      title: "Le Tapis Roulant",
+      title: "Les Tapis Roulants",
       description: "Le mécanisme fondamental du mouvement dans l'univers",
       path: "/relativite-restreinte-echelles/tapis-roulant",
       colorFrom: "from-blue-900/40",

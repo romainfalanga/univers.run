@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
       borderColor: "border-emerald-400",
       subPages: [
         { title: "La Superposition des Tissus", path: "/tissu-espace-temps-echelle/superposition" },
-        { title: "Le Tapis Roulant", path: "/tissu-espace-temps-echelle/tapis-roulant" }
+        { title: "Les Tapis Roulants", path: "/tissu-espace-temps-echelle/tapis-roulant" }
       ]
     },
     {
@@ -31,7 +31,7 @@ export const Footer: React.FC = () => {
       subPages: [
         { title: "Le Budget Universel", path: "/relativite-restreinte-echelles/budget-universel" },
         { title: "Le Pivot Temporel", path: "/relativite-restreinte-echelles/pivot-temporel" },
-        { title: "Le Tapis Roulant", path: "/relativite-restreinte-echelles/tapis-roulant" },
+        { title: "Les Tapis Roulants", path: "/relativite-restreinte-echelles/tapis-roulant" },
         { title: "Situation : Presque Immobile", path: "/relativite-restreinte-echelles/immobile" },
         { title: "Situation : Vitesse Extrêmement Rapide", path: "/relativite-restreinte-echelles/vitesse-extreme" }
       ]
@@ -43,7 +43,7 @@ export const Footer: React.FC = () => {
       colorTo: "to-indigo-900/30",
       borderColor: "border-purple-400",
       subPages: [
-        { title: "Le Tapis roulant", path: "/relativite-generale-echelles/escalator-universel" },
+        { title: "Les Tapis roulants", path: "/relativite-generale-echelles/escalator-universel" },
         { title: "Les Différents Environnements", path: "/relativite-generale-echelles/environnements" }
       ]
     },

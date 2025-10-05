@@ -27,7 +27,7 @@ export const TapisRoulantFabricPage: React.FC = () => {
         {/* En-tête */}
         <header className="text-center mb-6 sm:mb-8 lg:mb-12">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-emerald-300 via-teal-300 to-cyan-300 bg-clip-text text-transparent bg-[length:400%_400%] animate-gradient-x drop-shadow-[0_0_30px_rgba(16,185,129,0.8)] mb-3 sm:mb-4 px-2">
-            Le Tapis Roulant Universel
+            Les Tapis Roulants
           </h1>
           <p className="text-base sm:text-lg lg:text-xl text-emerald-200/90 max-w-4xl mx-auto px-4 leading-relaxed">
             Le mécanisme fondamental du mouvement dans l'univers
@@ -39,12 +39,6 @@ export const TapisRoulantFabricPage: React.FC = () => {
 
           <div className="bg-white/10 backdrop-blur-sm rounded-xl lg:rounded-2xl p-6 sm:p-8 border border-white/20 shadow-2xl">
             <div className="space-y-4 sm:space-y-6">
-              <div className="bg-gradient-to-r from-blue-900/40 to-indigo-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-blue-400">
-                <p className="text-base sm:text-lg text-blue-100 leading-relaxed font-semibold">
-                  Ensemble, ils forment un seul tissu : <strong className="text-white">le tissu d'espace-temps-d'échelle</strong>. Ce tissu est entraîné par un moteur universel : la vitesse de la lumière.
-                </p>
-              </div>
-
               <p className="text-base sm:text-lg text-gray-200 leading-relaxed">
                 <strong className="text-cyan-300">Tout ce qui existe dans l'univers voyage sur son propre tapis roulant invisible.</strong> Que ce soit une étoile, une planète, un homme, un grain de poussière : chacun descend son propre tapis roulant à travers les cinq dimensions.
               </p>
@@ -52,21 +46,21 @@ export const TapisRoulantFabricPage: React.FC = () => {
               <div className="bg-gradient-to-r from-cyan-900/40 to-teal-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-cyan-400">
                 <h3 className="text-lg font-semibold text-cyan-200 mb-3">La Vitesse Universelle</h3>
                 <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-                  Ce moteur ne varie jamais. Il bat comme un métronome cosmique, entraînant tout l'univers dans sa cadence. Chaque particule, chaque atome, chaque être vivant descend ce tapis roulant universel à exactement la même vitesse : <strong className="text-white">299 792 458 mètres par seconde</strong>.
+                  Ce moteur ne varie jamais. Il bat comme un métronome cosmique, entraînant tout l'univers dans sa cadence. Chaque particule, chaque atome, chaque être vivant descend son tapis roulant exactement à la même vitesse : <strong className="text-white">299 792 458 mètres par seconde</strong>.
                 </p>
               </div>
 
               <div className="bg-gradient-to-r from-purple-900/30 to-pink-900/20 p-4 sm:p-6 rounded-lg border-l-4 border-purple-400">
                 <h3 className="text-lg font-semibold text-purple-300 mb-3">L'Inclinaison Variable</h3>
                 <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-                  <strong className="text-white">Tout descend toujours à ce rythme, sans exception.</strong> La seule différence, c'est l'inclinaison du tapis roulant : plus ou moins raide selon la vitesse spatiale. Plus vous allez vite dans l'espace, plus votre tapis roulant s'incline vers l'échelle.
+                  <strong className="text-white">Tout descend toujours à ce rythme, sans exception.</strong> La seule différence, c'est l'inclinaison de son tapis roulant : plus ou moins raide selon la vitesse spatiale. Plus vous allez vite dans l'espace, plus votre tapis roulant s'incline vers l'échelle.
                 </p>
               </div>
 
               <div className="bg-gradient-to-r from-indigo-900/40 to-blue-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-indigo-400">
                 <h3 className="text-lg font-semibold text-indigo-200 mb-3">Le Rôle de la Masse</h3>
                 <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-                  La masse, elle aussi, influence l'inclinaison du tapis roulant. <strong className="text-white">Plus un objet est massif ou proche d'une grande masse, plus son tapis roulant penche vers l'échelle</strong>. C'est la courbure de l'espace-temps qui se traduit par une inclinaison du tapis roulant dans le tissu complet.
+                  La masse, elle aussi, influence l'inclinaison de son tapis roulant. <strong className="text-white">Plus un objet est massif ou proche d'une grande masse, plus son tapis roulant penche vers l'échelle</strong>. C'est la courbure de l'espace-temps qui se traduit par une inclinaison du tapis roulant dans le tissu complet.
                 </p>
               </div>
 
