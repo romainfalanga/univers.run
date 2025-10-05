@@ -49,24 +49,6 @@ export const HubbleLawPage: React.FC = () => {
               </p>
             </div>
           </div>
-
-          <div className="bg-gradient-to-br from-pink-900/40 to-red-900/30 backdrop-blur-sm rounded-xl lg:rounded-2xl p-6 sm:p-8 border border-pink-400/30 shadow-2xl">
-            <h2 className="text-2xl sm:text-3xl font-bold text-pink-300 mb-4 sm:mb-6">La Descente Universelle</h2>
-
-            <div className="space-y-4 sm:space-y-6">
-              <p className="text-base sm:text-lg text-gray-200 leading-relaxed">
-                Dans le modèle de la Relativité des échelles, la constante de Hubble représente <strong className="text-pink-300">le taux universel de descente d'échelle</strong>. Chaque seconde, chaque objet dans l'univers plonge légèrement plus profond vers l'infiniment petit.
-              </p>
-
-              <div className="bg-gradient-to-r from-red-900/40 to-orange-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-red-400">
-                <h3 className="text-lg font-semibold text-red-200 mb-3">Le Calcul</h3>
-                <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-                  70 km/s par mégaparsec signifie que pour chaque mégaparsec (environ 3,26 millions d'années-lumière) de distance, la vitesse apparente d'éloignement augmente de 70 kilomètres par seconde. <strong className="text-white">C'est exactement ce qu'on attendrait si chaque région de l'espace descendait son propre tapis roulant d'échelle</strong>.
-                </p>
-              </div>
-            </div>
-          </div>
-
           <div className="bg-gradient-to-br from-orange-900/40 to-yellow-900/30 backdrop-blur-sm rounded-xl lg:rounded-2xl p-6 sm:p-8 border border-orange-400/30 shadow-2xl">
             <h2 className="text-2xl sm:text-3xl font-bold text-orange-300 mb-4 sm:mb-6">Un Changement de Paradigme</h2>
 

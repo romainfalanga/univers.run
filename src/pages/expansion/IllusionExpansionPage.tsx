@@ -51,7 +51,7 @@ export const IllusionExpansionPage: React.FC = () => {
           </div>
 
           <div className="bg-gradient-to-br from-purple-900/40 to-pink-900/30 backdrop-blur-sm rounded-xl lg:rounded-2xl p-6 sm:p-8 border border-purple-400/30 shadow-2xl">
-            <h2 className="text-2xl sm:text-3xl font-bold text-purple-300 mb-4 sm:mb-6">Ce qui Se Passe Réellement</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-purple-300 mb-4 sm:mb-6">Avec la relativité des échelles</h2>
 
             <div className="space-y-4 sm:space-y-6">
               <p className="text-base sm:text-lg text-gray-200 leading-relaxed">
@@ -61,29 +61,11 @@ export const IllusionExpansionPage: React.FC = () => {
               <div className="bg-gradient-to-r from-purple-900/40 to-pink-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-purple-400">
                 <h3 className="text-lg font-semibold text-purple-200 mb-3">La Contraction Universelle</h3>
                 <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-                  Ce n'est pas l'espace entre les galaxies qui augmente, c'est <strong className="text-white">chaque galaxie qui se contracte dans sa propre dimension d'échelle</strong>. Quand deux objets descendent leurs escalators respectifs avec des inclinaisons différentes, ils créent l'illusion d'un éloignement mutuel.
+                  Ce n'est pas l'espace entre les galaxies qui augmente, c'est <strong className="text-white">chaque galaxie qui se contracte dans sa propre dimension d'échelle</strong>. Quand deux objets descendent leurs tapis roulants respectifs avec des inclinaisons différentes, ils créent l'illusion d'un éloignement mutuel.
                 </p>
               </div>
             </div>
           </div>
-
-          <div className="bg-gradient-to-br from-cyan-900/40 to-blue-900/30 backdrop-blur-sm rounded-xl lg:rounded-2xl p-6 sm:p-8 border border-cyan-400/30 shadow-2xl">
-            <h2 className="text-2xl sm:text-3xl font-bold text-cyan-300 mb-4 sm:mb-6">Une Nouvelle Vision du Cosmos</h2>
-
-            <div className="space-y-4 sm:space-y-6">
-              <p className="text-base sm:text-lg text-gray-200 leading-relaxed">
-                Cette expérience de pensée révèle que notre perception de l'univers en expansion n'est qu'un effet de perspective. En réalité, nous assistons à une <strong className="text-cyan-300">contraction universelle vers l'infiniment petit</strong>, chaque objet suivant sa propre trajectoire d'échelle selon ses propriétés physiques.
-              </p>
-
-              <div className="bg-gradient-to-r from-blue-900/40 to-indigo-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-blue-400">
-                <h3 className="text-lg font-semibold text-blue-200 mb-3">Les Implications</h3>
-                <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-                  Ce modèle élimine le besoin d'énergie sombre pour expliquer l'accélération de l'expansion. <strong className="text-white">L'effet observé est simplement la conséquence naturelle de la descente d'échelle universelle, modulée par la distribution de masse et de rayonnement dans le cosmos</strong>.
-                </p>
-              </div>
-            </div>
-          </div>
-
           <div className="flex justify-between items-center">
             <div className="w-32"></div>
             <Link

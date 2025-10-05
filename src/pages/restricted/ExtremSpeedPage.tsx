@@ -113,20 +113,6 @@ export const ExtremSpeedPage: React.FC = () => {
                   La quasi-totalité de ton budget est consacrée à la descente d'échelle. Tu plonges vers l'infiniment petit à une vitesse vertigineuse. <strong className="text-white">Ton monde entier se contracte rapidement</strong>.
                 </p>
               </div>
-
-              <div className="bg-yellow-900/20 p-4 sm:p-6 rounded-lg border-l-4 border-yellow-400">
-                <h3 className="text-lg font-semibold text-yellow-200 mb-3">État Relativiste Extrême</h3>
-                <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-                  C'est l'état des particules dans les accélérateurs de particules, ou des photons qui voyagent à la vitesse de la lumière. <strong className="text-white">Pour un photon, le temps n'existe pas et la descente d'échelle est totale</strong>.
-                </p>
-              </div>
-
-              <div className="bg-gradient-to-r from-pink-900/40 to-red-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-pink-400">
-                <h3 className="text-lg font-semibold text-pink-200 mb-3">La Limite Ultime</h3>
-                <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-                  À la vitesse de la lumière exacte (impossible à atteindre pour une particule massive), le tapis roulant devient parfaitement vertical. <strong className="text-white">Le temps s'arrête complètement et toute l'énergie va dans la descente d'échelle</strong>. C'est la limite absolue du modèle.
-                </p>
-              </div>
             </div>
           </div>
 

@@ -113,20 +113,6 @@ export const ImmobileStatePage: React.FC = () => {
                   Ta descente vers l'infiniment petit est imperceptible. Le tapis roulant est si plat que tu sembles stable dans l'échelle. <strong className="text-white">L'effet d'échelle est négligeable</strong>.
                 </p>
               </div>
-
-              <div className="bg-teal-900/20 p-4 sm:p-6 rounded-lg border-l-4 border-teal-400">
-                <h3 className="text-lg font-semibold text-teal-200 mb-3">État de Référence</h3>
-                <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-                  C'est l'état de référence pour mesurer tous les autres états. <strong className="text-white">Un observateur presque immobile vit le temps au maximum et l'échelle au minimum</strong>. C'est l'état le plus "stable" dans le tissu d'espace-temps-d'échelle.
-                </p>
-              </div>
-
-              <div className="bg-gradient-to-r from-cyan-900/40 to-blue-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-cyan-400">
-                <h3 className="text-lg font-semibold text-cyan-200 mb-3">La Vie Quotidienne</h3>
-                <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-                  C'est l'état dans lequel nous vivons au quotidien sur Terre. Nos vitesses sont si faibles comparées à celle de la lumière que nous sommes essentiellement "immobiles" du point de vue relativiste. <strong className="text-white">Notre tapis roulant est presque horizontal, nous avançons principalement dans le temps</strong>.
-                </p>
-              </div>
             </div>
           </div>
 

@@ -81,24 +81,6 @@ export const EnvironmentsPage: React.FC = () => {
               </div>
             </div>
           </div>
-
-          <div className="bg-gradient-to-br from-cyan-900/40 to-blue-900/30 backdrop-blur-sm rounded-xl lg:rounded-2xl p-6 sm:p-8 border border-cyan-400/30 shadow-2xl">
-            <h2 className="text-2xl sm:text-3xl font-bold text-cyan-300 mb-4 sm:mb-6">L'Expérience Vécue</h2>
-
-            <div className="space-y-4 sm:space-y-6">
-              <p className="text-base sm:text-lg text-gray-200 leading-relaxed">
-                Selon l'environnement où vous vous trouvez, votre expérience du temps et de l'échelle change radicalement. <strong className="text-cyan-300">Votre "maintenant" est différent selon que vous êtes dans le vide spatial ou près d'une étoile massive</strong>.
-              </p>
-
-              <div className="bg-gradient-to-r from-blue-900/40 to-indigo-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-blue-400">
-                <h3 className="text-lg font-semibold text-blue-200 mb-3">La Relativité Généralisée</h3>
-                <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-                  Einstein nous a appris que le temps s'écoule différemment selon la gravité. Ce modèle étend cette idée : <strong className="text-white">non seulement le temps change, mais aussi votre vitesse de descente dans l'échelle</strong>.
-                </p>
-              </div>
-            </div>
-          </div>
-
           <div className="flex justify-start items-center">
             <Link
               to="/relativite-generale-echelles/escalator-universel"
