@@ -47,6 +47,26 @@ export const Navigation: React.FC = () => {
       dotColor: 'bg-cyan-400',
       dotColor2: 'bg-blue-400',
       icon: '⚡'
+    },
+    {
+      path: '/relativite-echelles',
+      title: 'Relativité des Échelles',
+      shortTitle: 'Relativité des Échelles',
+      gradient: 'from-emerald-500/20 to-teal-500/20',
+      hoverGradient: 'hover:from-emerald-500/10 hover:to-teal-500/10',
+      textColor: 'text-emerald-300',
+      hoverTextColor: 'hover:text-emerald-300',
+      borderColor: 'border-emerald-400/30',
+      hoverBorderColor: 'hover:border-emerald-400/20',
+      shadowColor: 'shadow-emerald-500/25',
+      hoverShadowColor: 'hover:shadow-emerald-500/20',
+      glowFrom: 'from-emerald-400/10',
+      glowTo: 'to-teal-400/10',
+      hoverGlowFrom: 'from-emerald-400/5',
+      hoverGlowTo: 'to-teal-400/5',
+      dotColor: 'bg-emerald-400',
+      dotColor2: 'bg-teal-400',
+      icon: '🌀'
     }
   ];
 
