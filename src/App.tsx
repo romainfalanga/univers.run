@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
 import { Navigation } from './components/Navigation';
+import { Footer } from './components/Footer';
 import { ClassicalRelativityPage } from './pages/ClassicalRelativityPage';
 import { RelativityCalculatorPage } from './pages/RelativityCalculatorPage';
 import { GeneralRelativityPage } from './pages/GeneralRelativityPage';
@@ -15,15 +15,18 @@ import { RestrictedScaleRelativityPage } from './pages/RestrictedScaleRelativity
 import { GeneralScaleRelativityPage } from './pages/GeneralScaleRelativityPage';
 import { ThoughtExperimentsScalePage } from './pages/ThoughtExperimentsScalePage';
 import { BlackHolesScalePage } from './pages/BlackHolesScalePage';
+import { BlackHolesHubPage, CreationPage, PassagePage, WhyNoReturnPage, QuantumUniverseSizePage, InternalUniversesPage, HarmonyDescentPage, SingularityPage, EventHorizonPage, InvisibilityPage, BehindHorizonPage } from './pages/blackholes';
+import { RestrictedScaleRelativityHubPage, UniversalBudgetPage, ImmobileStatePage, ExtremSpeedPage, SpatialFreedomPage } from './pages/restricted';
+import { GeneralScaleRelativityHubPage, UniversalEscalatorPage, EnvironmentsPage, RadiationEffectPage, MultiplierCoefficientPage } from './pages/general';
+import { ThoughtExperimentsHubPage, DimensionsMuseumPage, UniversalTreadmillsPage } from './pages/experiments';
+import { ExpansionHubPage, IllusionExpansionPage, HubbleLawPage, CosmicRadiationPage, DarkEnergyPage } from './pages/expansion';
 
-// Composant pour gérer la navigation conditionnelle
 const AppContent: React.FC = () => {
 
   return (
-    <div className="relative">
-      {/* Navigation toujours affichée */}
+    <div className="relative pb-24">
       <Navigation />
-      
+
       <Routes>
         <Route path="/" element={<CodeUniversePage />} />
         <Route path="/code-univers" element={<CodeUniversePage />} />
@@ -34,12 +37,49 @@ const AppContent: React.FC = () => {
         <Route path="/quantum-lab" element={<QuantumLabPage />} />
         <Route path="/scale-lab" element={<ScaleLabPage />} />
         <Route path="/relativite-echelles" element={<ScaleRelativityPage />} />
+
         <Route path="/tissu-espace-temps-echelle" element={<SpaceTimeScaleFabricPage />} />
-        <Route path="/relativite-restreinte-echelles" element={<RestrictedScaleRelativityPage />} />
-        <Route path="/relativite-generale-echelles" element={<GeneralScaleRelativityPage />} />
-        <Route path="/experiences-pensee-echelles" element={<ThoughtExperimentsScalePage />} />
-        <Route path="/trous-noirs-echelles" element={<BlackHolesScalePage />} />
+
+        <Route path="/relativite-restreinte-echelles-old" element={<RestrictedScaleRelativityPage />} />
+        <Route path="/relativite-restreinte-echelles" element={<RestrictedScaleRelativityHubPage />} />
+        <Route path="/relativite-restreinte-echelles/budget-universel" element={<UniversalBudgetPage />} />
+        <Route path="/relativite-restreinte-echelles/immobile" element={<ImmobileStatePage />} />
+        <Route path="/relativite-restreinte-echelles/vitesse-extreme" element={<ExtremSpeedPage />} />
+        <Route path="/relativite-restreinte-echelles/liberte-spatiale" element={<SpatialFreedomPage />} />
+
+        <Route path="/relativite-generale-echelles-old" element={<GeneralScaleRelativityPage />} />
+        <Route path="/relativite-generale-echelles" element={<GeneralScaleRelativityHubPage />} />
+        <Route path="/relativite-generale-echelles/escalator-universel" element={<UniversalEscalatorPage />} />
+        <Route path="/relativite-generale-echelles/environnements" element={<EnvironmentsPage />} />
+        <Route path="/relativite-generale-echelles/effet-rayonnement" element={<RadiationEffectPage />} />
+        <Route path="/relativite-generale-echelles/coefficient-multiplicateur" element={<MultiplierCoefficientPage />} />
+
+        <Route path="/experiences-pensee-echelles-old" element={<ThoughtExperimentsScalePage />} />
+        <Route path="/experiences-pensee-echelles" element={<ThoughtExperimentsHubPage />} />
+        <Route path="/experiences-pensee-echelles/musee-dimensions" element={<DimensionsMuseumPage />} />
+        <Route path="/experiences-pensee-echelles/tapis-roulants" element={<UniversalTreadmillsPage />} />
+        
+        <Route path="/expansion-interne" element={<ExpansionHubPage />} />
+        <Route path="/expansion-interne/illusion-expansion" element={<IllusionExpansionPage />} />
+        <Route path="/expansion-interne/loi-hubble" element={<HubbleLawPage />} />
+        <Route path="/expansion-interne/rayonnement-cosmique" element={<CosmicRadiationPage />} />
+        <Route path="/expansion-interne/energie-sombre" element={<DarkEnergyPage />} />
+        
+        <Route path="/trous-noirs-echelles-old" element={<BlackHolesScalePage />} />
+        <Route path="/trous-noirs-echelles" element={<BlackHolesHubPage />} />
+        <Route path="/trous-noirs-echelles/creation" element={<CreationPage />} />
+        <Route path="/trous-noirs-echelles/passage" element={<PassagePage />} />
+        <Route path="/trous-noirs-echelles/retour-impossible" element={<WhyNoReturnPage />} />
+        <Route path="/trous-noirs-echelles/taille-univers" element={<QuantumUniverseSizePage />} />
+        <Route path="/trous-noirs-echelles/univers-internes" element={<InternalUniversesPage />} />
+        <Route path="/trous-noirs-echelles/harmonie" element={<HarmonyDescentPage />} />
+        <Route path="/trous-noirs-echelles/singularite" element={<SingularityPage />} />
+        <Route path="/trous-noirs-echelles/horizon" element={<EventHorizonPage />} />
+        <Route path="/trous-noirs-echelles/invisibilite" element={<InvisibilityPage />} />
+        <Route path="/trous-noirs-echelles/derriere-horizon" element={<BehindHorizonPage />} />
       </Routes>
+
+      <Footer />
     </div>
   );
 };

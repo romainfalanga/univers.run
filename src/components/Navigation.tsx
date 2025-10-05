@@ -6,7 +6,24 @@ import { Menu, X } from 'lucide-react';
 export const Navigation: React.FC = () => {
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  
+
+  const isPageActive = (itemPath: string): boolean => {
+    if (location.pathname === itemPath) {
+      return true;
+    }
+
+    if (itemPath === '/relativite-echelles') {
+      return location.pathname.startsWith('/relativite-restreinte-echelles') ||
+             location.pathname.startsWith('/relativite-generale-echelles') ||
+             location.pathname.startsWith('/experiences-pensee-echelles') ||
+             location.pathname.startsWith('/trous-noirs-echelles') ||
+             location.pathname.startsWith('/expansion-interne') ||
+             location.pathname.startsWith('/tissu-espace-temps-echelle');
+    }
+
+    return false;
+  };
+
   const navigationItems = [
     {
       path: '/code-univers',
@@ -267,7 +284,7 @@ export const Navigation: React.FC = () => {
                 to={item.path}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className={`relative group flex items-center justify-center p-6 sm:p-8 rounded-2xl sm:rounded-3xl border-2 transition-all duration-300 sm:duration-700 transform hover:scale-105 active:scale-95 flex-1 sm:max-w-xs ${
-                  location.pathname === item.path
+                  isPageActive(item.path)
                     ? `bg-gradient-to-br from-slate-800/95 to-slate-700/95 ${item.borderColor} ${item.shadowColor} shadow-2xl`
                     : `bg-slate-800/95 border-slate-600/50 hover:bg-gradient-to-br hover:from-slate-700/95 hover:to-slate-600/95 ${item.hoverBorderColor} ${item.hoverShadowColor} hover:shadow-2xl`
                 }`}

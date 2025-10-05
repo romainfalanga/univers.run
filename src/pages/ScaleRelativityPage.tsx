@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
 
 export const ScaleRelativityPage: React.FC = () => {
   // Force le re-rendu propre de la page
@@ -94,10 +93,9 @@ export const ScaleRelativityPage: React.FC = () => {
               <div className="flex justify-center mt-6">
                 <Link
                   to="/tissu-espace-temps-echelle"
-                  className="group flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white rounded-xl font-semibold text-sm sm:text-base transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-emerald-500/25"
+                  className="group flex items-center justify-center px-6 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 hover:shadow-emerald-500/25 text-white rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
                 >
                   Le Tissu d'Espace-Temps-d'Échelle
-                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
             </div>
@@ -139,10 +137,9 @@ export const ScaleRelativityPage: React.FC = () => {
               <div className="flex justify-center mt-6">
                 <Link
                   to="/relativite-restreinte-echelles"
-                  className="group flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white rounded-xl font-semibold text-sm sm:text-base transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-cyan-500/25"
+                  className="group flex items-center justify-center px-6 py-3 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 hover:shadow-cyan-500/25 text-white rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
                 >
                   Relativité Restreinte des Échelles
-                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
             </div>
@@ -187,10 +184,9 @@ export const ScaleRelativityPage: React.FC = () => {
               <div className="flex justify-center mt-6">
                 <Link
                   to="/relativite-generale-echelles"
-                  className="group flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white rounded-xl font-semibold text-sm sm:text-base transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-purple-500/25"
+                  className="group flex items-center justify-center px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 hover:shadow-purple-500/25 text-white rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
                 >
                   Relativité Générale des Échelles
-                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
             </div>
@@ -222,16 +218,63 @@ export const ScaleRelativityPage: React.FC = () => {
               <div className="flex justify-center mt-6">
                 <Link
                   to="/experiences-pensee-echelles"
-                  className="group flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-500 hover:to-red-500 text-white rounded-xl font-semibold text-sm sm:text-base transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-orange-500/25"
+                  className="group flex items-center justify-center px-6 py-3 bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-500 hover:to-red-500 hover:shadow-orange-500/25 text-white rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
                 >
                   Les Expériences de Pensée
-                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
             </div>
           </div>
 
           {/* Section Les Trous Noirs */}
+
+          {/* Section L'Expansion */}
+          <div className="bg-gradient-to-br from-indigo-900/40 to-purple-900/30 backdrop-blur-sm rounded-xl lg:rounded-2xl p-6 sm:p-8 border border-indigo-400/30 shadow-2xl">
+            <div className="mb-4 sm:mb-6">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-indigo-300 mb-4">
+                L'Expansion
+              </h2>
+            </div>
+            
+            <div className="space-y-4 sm:space-y-6">
+              <div className="bg-indigo-900/20 p-4 sm:p-6 rounded-lg border-l-4 border-indigo-400">
+                <h3 className="text-lg sm:text-xl font-semibold text-indigo-200 mb-3">L'Illusion de l'Expansion</h3>
+                <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
+                  Ce que nous appelons "expansion de l'univers" pourrait être une illusion de perspective. <strong className="text-white">Ce n'est pas l'espace qui grandit, mais l'échelle qui se contracte</strong>.
+                </p>
+              </div>
+              
+              <div className="bg-purple-900/20 p-4 sm:p-6 rounded-lg border-l-4 border-purple-400">
+                <h3 className="text-lg sm:text-xl font-semibold text-purple-200 mb-3">La Loi de Hubble Réinterprétée</h3>
+                <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
+                  La constante de Hubble — 70 km/s par mégaparsec — n'est que <strong className="text-white">la traduction visible de cette réduction d'échelle par seconde</strong>. Plus une galaxie est loin, plus le rayonnement cumulé a incliné nos tapis roulants.
+                </p>
+              </div>
+              
+              <div className="bg-gradient-to-r from-orange-900/40 to-red-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-orange-400">
+                <h3 className="text-lg sm:text-xl font-semibold text-orange-200 mb-3">Le Rayonnement Cosmique</h3>
+                <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
+                  Le rayonnement agit comme une pression permanente qui incline le tapis roulant partout dans l'univers. <strong className="text-white">Plus une région reçoit de rayonnement, plus son tapis roulant s'incline</strong>.
+                </p>
+              </div>
+              
+              <div className="bg-gradient-to-r from-blue-900/40 to-cyan-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-blue-400">
+                <h3 className="text-lg sm:text-xl font-semibold text-blue-200 mb-3">L'Énergie Sombre Réexaminée</h3>
+                <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
+                  L'accélération apparente de l'expansion s'explique naturellement sans recourir à l'énergie sombre. <strong className="text-white">La descente d'échelle non-linéaire crée naturellement l'apparence d'une accélération</strong>.
+                </p>
+              </div>
+              
+              <div className="flex justify-center mt-6">
+                <Link
+                  to="/expansion-interne"
+                  className="group flex items-center justify-center px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 hover:shadow-indigo-500/25 text-white rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
+                >
+                  L'Expansion Interne
+                </Link>
+              </div>
+            </div>
+          </div>
           <div className="bg-gradient-to-br from-gray-900/60 to-black/50 backdrop-blur-sm rounded-xl lg:rounded-2xl p-6 sm:p-8 border border-gray-400/30 shadow-2xl">
             <div className="mb-4 sm:mb-6">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-300 mb-4">
@@ -271,10 +314,9 @@ export const ScaleRelativityPage: React.FC = () => {
               <div className="flex justify-center mt-6">
                 <Link
                   to="/trous-noirs-echelles"
-                  className="group flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-gray-600 to-black hover:from-gray-500 hover:to-gray-800 text-white rounded-xl font-semibold text-sm sm:text-base transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-gray-500/25"
+                  className="group flex items-center justify-center px-6 py-3 bg-gradient-to-r from-gray-600 to-black hover:from-gray-500 hover:to-gray-800 hover:shadow-gray-500/25 text-white rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
                 >
                   Les Trous Noirs
-                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
             </div>
