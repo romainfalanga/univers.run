@@ -18,6 +18,22 @@ export const RestrictedScaleRelativityHubPage: React.FC = () => {
       borderColor: "border-cyan-400"
     },
     {
+      title: "Le Pivot Temporel",
+      description: "Le temps comme lien entre les deux budgets",
+      path: "/relativite-restreinte-echelles/pivot-temporel",
+      colorFrom: "from-indigo-900/40",
+      colorTo: "to-purple-900/30",
+      borderColor: "border-indigo-400"
+    },
+    {
+      title: "Le Tapis Roulant",
+      description: "Le mécanisme fondamental du mouvement dans l'univers",
+      path: "/relativite-restreinte-echelles/tapis-roulant",
+      colorFrom: "from-blue-900/40",
+      colorTo: "to-cyan-900/30",
+      borderColor: "border-blue-400"
+    },
+    {
       title: "Situation : Presque Immobile",
       description: "Budget temps maximum avec graphiques et barres de progression",
       path: "/relativite-restreinte-echelles/immobile",

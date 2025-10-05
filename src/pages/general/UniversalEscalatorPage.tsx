@@ -89,8 +89,7 @@ export const UniversalEscalatorPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="flex justify-between items-center">
-            <div className="w-32"></div>
+          <div className="flex justify-end items-center">
             <Link
               to="/relativite-generale-echelles/environnements"
               className="group flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"

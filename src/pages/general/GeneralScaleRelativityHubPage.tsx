@@ -24,22 +24,6 @@ export const GeneralScaleRelativityHubPage: React.FC = () => {
       colorFrom: "from-blue-900/40",
       colorTo: "to-cyan-900/30",
       borderColor: "border-blue-400"
-    },
-    {
-      title: "L'Effet du Rayonnement",
-      description: "Comment la lumière de l'univers agit comme une pression constante",
-      path: "/relativite-generale-echelles/effet-rayonnement",
-      colorFrom: "from-orange-900/40",
-      colorTo: "to-red-900/30",
-      borderColor: "border-orange-400"
-    },
-    {
-      title: "Le Coefficient Multiplicateur",
-      description: "La formule unifiée reliant vitesse et courbure gravitationnelle",
-      path: "/relativite-generale-echelles/coefficient-multiplicateur",
-      colorFrom: "from-indigo-900/40",
-      colorTo: "to-purple-900/30",
-      borderColor: "border-indigo-400"
     }
   ];
 

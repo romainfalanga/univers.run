@@ -17,7 +17,10 @@ export const Footer: React.FC = () => {
       colorFrom: "from-emerald-900/40",
       colorTo: "to-teal-900/30",
       borderColor: "border-emerald-400",
-      subPages: []
+      subPages: [
+        { title: "La Superposition des Tissus", path: "/tissu-espace-temps-echelle/superposition" },
+        { title: "Le Tapis Roulant", path: "/tissu-espace-temps-echelle/tapis-roulant" }
+      ]
     },
     {
       title: "Relativité Restreinte des Échelles",
@@ -27,6 +30,7 @@ export const Footer: React.FC = () => {
       borderColor: "border-cyan-400",
       subPages: [
         { title: "Le Budget Universel", path: "/relativite-restreinte-echelles/budget-universel" },
+        { title: "Le Tapis Roulant", path: "/relativite-restreinte-echelles/tapis-roulant" },
         { title: "Situation : Presque Immobile", path: "/relativite-restreinte-echelles/immobile" },
         { title: "Situation : Vitesse Extrême", path: "/relativite-restreinte-echelles/vitesse-extreme" },
         { title: "La Liberté Spatiale", path: "/relativite-restreinte-echelles/liberte-spatiale" }
@@ -40,9 +44,19 @@ export const Footer: React.FC = () => {
       borderColor: "border-purple-400",
       subPages: [
         { title: "Le Tapis roulant", path: "/relativite-generale-echelles/escalator-universel" },
-        { title: "Les Différents Environnements", path: "/relativite-generale-echelles/environnements" },
-        { title: "L'Effet du Rayonnement", path: "/relativite-generale-echelles/effet-rayonnement" },
-        { title: "Le Coefficient Multiplicateur", path: "/relativite-generale-echelles/coefficient-multiplicateur" }
+        { title: "Les Différents Environnements", path: "/relativite-generale-echelles/environnements" }
+      ]
+    },
+    {
+      title: "Relativité des Échelles",
+      path: "/relativite-echelles-final",
+      colorFrom: "from-indigo-900/40",
+      colorTo: "to-pink-900/30",
+      borderColor: "border-indigo-400",
+      subPages: [
+        { title: "Un Seul Moteur, Multiples Inclinaisons", path: "/relativite-echelles-final/moteur-universel" },
+        { title: "Le Tapis Roulant Unifié", path: "/relativite-echelles-final/tapis-roulant" },
+        { title: "La Formule de la Relativité des Échelles", path: "/relativite-echelles-final/formule" }
       ]
     },
     {
