@@ -6,7 +6,6 @@ import { Menu, X } from 'lucide-react';
 export const Navigation: React.FC = () => {
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [displayedText] = useState("L'univers est un jeu, alors amuse-toi");
   
   const navigationItems = [
     {
@@ -30,9 +29,9 @@ export const Navigation: React.FC = () => {
       icon: '🌌'
     },
     {
-      path: '/relativity',
-      title: 'Relativité Restreinte',
-      shortTitle: 'Relativité Restreinte',
+      path: '/relativite-classique',
+      title: 'Relativité Classique',
+      shortTitle: 'Relativité Classique',
       gradient: 'from-cyan-500/20 to-blue-500/20',
       hoverGradient: 'hover:from-cyan-500/10 hover:to-blue-500/10',
       textColor: 'text-cyan-300',
@@ -48,66 +47,6 @@ export const Navigation: React.FC = () => {
       dotColor: 'bg-cyan-400',
       dotColor2: 'bg-blue-400',
       icon: '⚡'
-    },
-    {
-      path: '/black-hole-concept',
-      title: 'Horizon des Événements',
-      shortTitle: 'Horizon des Événements',
-      gradient: 'from-purple-500/20 to-pink-500/20',
-      hoverGradient: 'hover:from-purple-500/10 hover:to-pink-500/10',
-      textColor: 'text-purple-300',
-      hoverTextColor: 'hover:text-purple-300',
-      borderColor: 'border-purple-400/30',
-      hoverBorderColor: 'hover:border-purple-400/20',
-      shadowColor: 'shadow-purple-500/25',
-      hoverShadowColor: 'hover:shadow-purple-500/20',
-      glowFrom: 'from-purple-400/10',
-      glowTo: 'to-pink-400/10',
-      hoverGlowFrom: 'from-purple-400/5',
-      hoverGlowTo: 'to-pink-400/5',
-      dotColor: 'bg-purple-400',
-      dotColor2: 'bg-pink-400',
-      icon: '🕳️'
-    },
-    {
-      path: '/quantum-lab',
-      title: 'Laboratoire Quantique',
-      shortTitle: 'Laboratoire Quantique',
-      gradient: 'from-teal-500/20 to-cyan-500/20',
-      hoverGradient: 'hover:from-teal-500/10 hover:to-cyan-500/10',
-      textColor: 'text-teal-300',
-      hoverTextColor: 'hover:text-teal-300',
-      borderColor: 'border-teal-400/30',
-      hoverBorderColor: 'hover:border-teal-400/20',
-      shadowColor: 'shadow-teal-500/25',
-      hoverShadowColor: 'hover:shadow-teal-500/20',
-      glowFrom: 'from-teal-400/10',
-      glowTo: 'to-cyan-400/10',
-      hoverGlowFrom: 'from-teal-400/5',
-      hoverGlowTo: 'to-cyan-400/5',
-      dotColor: 'bg-teal-400',
-      dotColor2: 'bg-cyan-400',
-      icon: '🔬'
-    },
-    {
-      path: '/scale-lab',
-      title: 'Laboratoire des Échelles',
-      shortTitle: 'Laboratoire des Échelles',
-      gradient: 'from-emerald-500/20 to-green-500/20',
-      hoverGradient: 'hover:from-emerald-500/10 hover:to-green-500/10',
-      textColor: 'text-emerald-300',
-      hoverTextColor: 'hover:text-emerald-300',
-      borderColor: 'border-emerald-400/30',
-      hoverBorderColor: 'hover:border-emerald-400/20',
-      shadowColor: 'shadow-emerald-500/25',
-      hoverShadowColor: 'hover:shadow-emerald-500/20',
-      glowFrom: 'from-emerald-400/10',
-      glowTo: 'to-green-400/10',
-      hoverGlowFrom: 'from-emerald-400/5',
-      hoverGlowTo: 'to-green-400/5',
-      dotColor: 'bg-emerald-400',
-      dotColor2: 'bg-green-400',
-      icon: '⚖️'
     }
   ];
 
@@ -249,11 +188,11 @@ export const Navigation: React.FC = () => {
         
         {/* Contenu du menu avec les liens de navigation */}
         <div 
-          className="h-full flex flex-col items-center justify-start p-4 sm:p-8 pt-20 sm:pt-28 pb-20 overflow-y-auto relative z-10"
+          className="h-full flex flex-col items-center justify-start p-4 sm:p-8 pt-32 sm:pt-40 lg:pt-48 pb-20 overflow-y-auto relative z-10"
           onClick={(e) => e.stopPropagation()}
         >
           {/* Titre "Menu de Dieu" intégré dans le contenu */}
-          <div className="absolute top-8 sm:top-16 left-1/2 transform -translate-x-1/2 z-40">
+          <div className="absolute top-8 sm:top-12 lg:top-16 left-1/2 transform -translate-x-1/2 z-40">
             <div className="relative group cursor-default">
               {/* Fond principal avec gradient animé */}
               <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-purple-900/95 via-blue-900/95 to-indigo-900/95 rounded-3xl"></div>
@@ -284,7 +223,7 @@ export const Navigation: React.FC = () => {
               {/* Texte principal avec effets multiples */}
               <h2 className="relative z-10 text-3xl sm:text-5xl font-black mb-0 transform transition-all duration-1000 p-3 sm:p-8 rounded-3xl overflow-hidden">
                 <span className="relative z-10 bg-gradient-to-r from-cyan-300 via-purple-300 via-pink-300 to-yellow-300 bg-clip-text text-transparent bg-[length:400%_400%] animate-gradient-x drop-shadow-[0_0_30px_rgba(6,182,212,0.8)] group-hover:drop-shadow-[0_0_50px_rgba(147,51,234,1)] transition-all duration-1000 font-extrabold tracking-wider whitespace-nowrap">
-                  Menu de l'univers
+                  univers.run
                 </span>
                 
                 {/* Bordure lumineuse animée */}
@@ -300,49 +239,8 @@ export const Navigation: React.FC = () => {
             </div>
           </div>
           
-          {/* Phrase stylisée sous le titre */}
-          <div className="mt-8 sm:mt-20 mb-8 sm:mb-12 max-w-4xl mx-auto px-4">
-            <div className="relative group cursor-default">
-              {/* Fond principal avec gradient animé */}
-              <div className="absolute inset-0 bg-gradient-to-r from-slate-800/90 via-purple-800/90 to-indigo-800/90 rounded-2xl"></div>
-              
-              {/* Couche de grille futuriste */}
-              <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(6,182,212,0.08)_1px,transparent_1px),linear-gradient(rgba(6,182,212,0.08)_1px,transparent_1px)] bg-[size:20px_20px] rounded-2xl"></div>
-              
-              {/* Effet de vagues énergétiques */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500/5 via-purple-500/5 via-pink-500/5 to-transparent bg-[length:200%_100%] animate-gradient-x rounded-2xl"></div>
-              
-              {/* Bordures lumineuses */}
-              <div className="absolute inset-0 rounded-2xl border border-cyan-400/30 shadow-[0_0_20px_rgba(6,182,212,0.2)]"></div>
-              <div className="absolute inset-1 rounded-2xl border border-purple-400/20 shadow-[0_0_15px_rgba(147,51,234,0.15)]"></div>
-              
-              {/* Lueur externe pulsante */}
-              <div className="absolute -inset-2 bg-gradient-to-r from-cyan-600/10 via-purple-600/10 to-pink-600/10 rounded-2xl blur-xl animate-pulse opacity-50"></div>
-              
-              {/* Effet holographique */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-300/3 via-purple-300/3 to-transparent bg-[length:300%_100%] animate-gradient-x rounded-2xl opacity-40"></div>
-              
-              {/* Texte principal */}
-              <div className="relative z-10 p-4 sm:p-6 text-center">
-                <p className="text-lg sm:text-xl lg:text-2xl font-semibold bg-gradient-to-r from-cyan-200 via-purple-200 via-pink-200 to-yellow-200 bg-clip-text text-transparent bg-[length:400%_400%] animate-gradient-x drop-shadow-[0_0_20px_rgba(6,182,212,0.6)] leading-relaxed italic">
-                  {displayedText}
-                </p>
-                
-                {/* Bordure lumineuse animée autour du texte */}
-                <div className="absolute -inset-2 bg-gradient-to-r from-cyan-400/20 via-purple-400/20 to-pink-400/20 rounded-2xl opacity-20 blur-lg animate-pulse"></div>
-                
-                {/* Effet de scan horizontal */}
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-1000 animate-scan rounded-2xl"></div>
-                
-                {/* Reflets cristallins */}
-                <div className="absolute top-2 left-1/4 w-1/2 h-0.5 bg-gradient-to-r from-transparent via-white/60 to-transparent blur-sm opacity-40"></div>
-                <div className="absolute bottom-2 right-1/4 w-1/3 h-0.5 bg-gradient-to-r from-transparent via-cyan-300/60 to-transparent blur-sm opacity-30"></div>
-              </div>
-            </div>
-          </div>
-          
           {/* Bouton de fermeture X en haut à droite du contenu */}
-          <div className="flex flex-col sm:flex-row sm:justify-center sm:flex-wrap gap-6 sm:gap-8 max-w-5xl w-full flex-shrink-0">
+          <div className="flex flex-col sm:flex-row sm:justify-center sm:flex-wrap gap-6 sm:gap-8 max-w-5xl w-full flex-shrink-0 mt-8 sm:mt-12 lg:mt-16">
             {navigationItems.map((item, index) => (
               <Link
                 key={item.path}

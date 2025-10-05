@@ -2,7 +2,7 @@
   "name": "Univers.run",
   "short_name": "Univers.run",
   "description": "Explorez les mystères de l'univers à travers la physique théorique et la relativité",
-  "start_url": "/",
+  "start_url": "/code-univers",
   "display": "standalone",
   "background_color": "#1e1b4b",
   "theme_color": "#1e1b4b",

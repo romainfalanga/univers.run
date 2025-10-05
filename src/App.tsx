@@ -2,7 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { Navigation } from './components/Navigation';
+import { ClassicalRelativityPage } from './pages/ClassicalRelativityPage';
 import { RelativityCalculatorPage } from './pages/RelativityCalculatorPage';
+import { GeneralRelativityPage } from './pages/GeneralRelativityPage';
 import { BlackHoleConceptPage } from './pages/BlackHoleConceptPage';
 import { CodeUniversePage } from './pages/CodeUniversePage';
 import { QuantumLabPage } from './pages/QuantumLabPage';
@@ -19,7 +21,9 @@ const AppContent: React.FC = () => {
       <Routes>
         <Route path="/" element={<CodeUniversePage />} />
         <Route path="/code-univers" element={<CodeUniversePage />} />
+        <Route path="/relativite-classique" element={<ClassicalRelativityPage />} />
         <Route path="/relativity" element={<RelativityCalculatorPage />} />
+        <Route path="/relativite-generale" element={<GeneralRelativityPage />} />
         <Route path="/black-hole-concept" element={<BlackHoleConceptPage />} />
         <Route path="/quantum-lab" element={<QuantumLabPage />} />
         <Route path="/scale-lab" element={<ScaleLabPage />} />

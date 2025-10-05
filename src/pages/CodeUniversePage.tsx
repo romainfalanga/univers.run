@@ -100,7 +100,7 @@ export const CodeUniversePage: React.FC = () => {
         <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(147,51,234,0.03)_50%,transparent_75%)] bg-[length:80px_80px] opacity-60 z-0 animate-pulse"></div>
         
         {/* Page d'introduction */}
-        <div className="w-full flex items-start justify-center p-4 sm:p-6 pt-8 relative z-20">
+        <div className="w-full flex items-start justify-center p-4 sm:p-6 relative z-20">
           <div className="max-w-4xl mx-auto w-full text-center">
             
             {/* Titre principal */}
@@ -261,12 +261,12 @@ export const CodeUniversePage: React.FC = () => {
                     À partir de l'échelle atomique (~10⁻¹⁰ m), tout change : nous entrons dans le domaine de la <strong className="text-purple-300">superposition quantique</strong>.
                   </p>
                   <p>
-                    <strong className="text-cyan-300">Dans l'univers :</strong> à cette échelle, les entités physiques (atomes, électrons, particules) existent dans plusieurs états à la fois. Dans l'<strong className="text-purple-300">expérience de la double fente</strong>, par exemple, un électron ou un atome passe simultanément par les deux fentes, créant des interférences avec lui-même. Leur existence est une <strong className="text-yellow-300">probabilité</strong> diffuse jusqu'à ce qu'une observation ou une mesure "effondre" cette superposition en un état défini.
+                    <strong className="text-cyan-300">Dans l'univers :</strong> à cette échelle, les entités physiques (atomes, électrons, particules) existent dans plusieurs états à la fois. Dans l'<strong className="text-purple-300">expérience de la double fente</strong>, par exemple, un électron ou un atome passe simultanément par les deux fentes, créant des interférences avec lui-même. Leur existence est une <strong className="text-yellow-300">probabilité</strong> diffuse jusqu'à ce qu\'une observation ou une mesure "effondre" cette superposition en un état défini.
                   </p>
                   <p>
-                    <strong className="text-green-300">Dans le code :</strong> En suivant cette logique, l'organisation des packages qui produisent les vues n'existe pas sous une forme unique et figée. Elle se déploie comme un ensemble de <strong className="text-yellow-300">probabilités</strong> d'agencements de packages possibles. Ce n'est qu'au moment où l'on observe cette organisation que les packages prennent une configuration particulière.
+                    <strong className="text-green-300">Dans le code :</strong> En suivant cette logique, l'organisation des packages qui produisent les vues n'existe pas sous une forme unique et figée. Elle se déploie comme un ensemble de <strong className="text-yellow-300">probabilités</strong> d'agencements de packages possibles. Ce n\'est qu'au moment où l\'on observe cette organisation que les packages prennent une configuration particulière.
 
-De même, les classes qui composent un package n'existent pas à l'avance sous une seule écriture. Ils sont une <strong className="text-yellow-300">probabilité</strong> parmi une infinité de manières de produire le même rendu. Ce n'est qu'au moment où l'on "ouvre" le package et que l'on regarde sous son capot que le code se matérialise dans une version précise, comme si l'acte d'observation faisait émerger une implémentation unique parmi toutes les possibilités.
+De même, les classes qui composent un package n'existent pas à l\'avance sous une seule écriture. Ils sont une <strong className="text-yellow-300">probabilité</strong> parmi une infinité de manières de produire le même rendu. Ce n'est qu'au moment où l'on \"ouvre" le package et que l'on regarde sous son capot que le code se matérialise dans une version précise, comme si l\'acte d'observation faisait émerger une implémentation unique parmi toutes les possibilités.
                   </p>
                 </div>
               </div>

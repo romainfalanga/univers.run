@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { ArrowLeft } from 'lucide-react';
 import { RelativityChart } from '../components/RelativityChart';
 import { ControlPanel } from '../components/ControlPanel';
 import { ExplanationPanel } from '../components/ExplanationPanel';
@@ -136,9 +138,20 @@ export const RelativityCalculatorPage: React.FC = () => {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-purple-900/20"></div>
       <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(59,130,246,0.05)_50%,transparent_75%)] bg-[length:60px_60px] animate-pulse"></div>
       
-      <div className="container mx-auto px-2 sm:px-4 lg:px-6 py-2 sm:py-4 lg:py-6 relative z-10 max-w-full pt-8 sm:pt-10">
+      <div className="container mx-auto px-2 sm:px-4 lg:px-6 py-2 sm:py-4 lg:py-6 relative z-10 max-w-full">
         {/* En-tête */}
         <header className="text-center mb-3 sm:mb-4 lg:mb-6">
+          {/* Bouton Retour */}
+          <div className="flex justify-center mb-4 sm:mb-6">
+            <Link
+              to="/relativite-classique"
+              className="group flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-500 hover:to-gray-600 text-white rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-gray-500/25"
+            >
+              <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5 mr-2 group-hover:-translate-x-1 transition-transform" />
+              Retour
+            </Link>
+          </div>
+          
           <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold bg-gradient-to-r from-cyan-300 via-blue-300 via-purple-300 to-violet-300 bg-clip-text text-transparent bg-[length:400%_400%] animate-gradient-x drop-shadow-[0_0_30px_rgba(59,130,246,0.8)] mb-1 sm:mb-2 lg:mb-3 px-2">
             Relativité Restreinte
           </h1>
