@@ -96,18 +96,6 @@ export const seoConfig: Record<string, SEOMetadata> = {
     keywords: 'environnements, gravité, espace-temps, relativité générale',
     ogType: 'article'
   },
-  '/relativite-generale-echelles/effet-rayonnement': {
-    title: 'Effet du Rayonnement sur les Échelles | Univers.run',
-    description: 'Découvrez comment le rayonnement affecte différemment chaque échelle de l\'univers.',
-    keywords: 'rayonnement, effets, échelles, énergie, physique',
-    ogType: 'article'
-  },
-  '/relativite-generale-echelles/coefficient-multiplicateur': {
-    title: 'Coefficient Multiplicateur Gravitationnel | Univers.run',
-    description: 'Comprenez le coefficient qui amplifie les effets gravitationnels à différentes échelles.',
-    keywords: 'coefficient multiplicateur, gravité, échelles, relativité générale',
-    ogType: 'article'
-  },
   '/relativite-echelles-final': {
     title: 'Hub des Tapis Roulants - Synthèse | Univers.run',
     description: 'Synthèse complète des concepts de la relativité des échelles à travers l\'analogie des tapis roulants.',

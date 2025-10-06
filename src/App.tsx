@@ -9,7 +9,7 @@ import { CodeUniversePage } from './pages/CodeUniversePage';
 import { ScaleRelativityPage } from './pages/ScaleRelativityPage';
 import { CreationPage, PassagePage, WhyNoReturnPage, QuantumUniverseSizePage, InternalUniversesPage, HarmonyDescentPage, SingularityPage, EventHorizonPage, InvisibilityPage, BehindHorizonPage } from './pages/blackholes';
 import { UniversalBudgetPage, ImmobileStatePage, ExtremSpeedPage, PivotTemporelPage, TapisRoulantRestrictedPage } from './pages/restricted';
-import { UniversalEscalatorPage, EnvironmentsPage, RadiationEffectPage, MultiplierCoefficientPage } from './pages/general';
+import { UniversalEscalatorPage, EnvironmentsPage } from './pages/general';
 import { MuseumEntrancePage, FirstRoomPage } from './pages/experiments';
 import { IllusionExpansionPage, HubbleLawPage, DarkEnergyPage } from './pages/expansion';
 import { SuperpositionTissusPage, TapisRoulantFabricPage } from './pages/fabric';
@@ -41,8 +41,6 @@ const AppContent: React.FC = () => {
 
         <Route path="/relativite-generale-echelles/escalator-universel" element={<UniversalEscalatorPage />} />
         <Route path="/relativite-generale-echelles/environnements" element={<EnvironmentsPage />} />
-        <Route path="/relativite-generale-echelles/effet-rayonnement" element={<RadiationEffectPage />} />
-        <Route path="/relativite-generale-echelles/coefficient-multiplicateur" element={<MultiplierCoefficientPage />} />
 
         <Route path="/relativite-echelles-final" element={<TreadmillsHubPage />} />
 

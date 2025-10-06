@@ -8,36 +8,44 @@ const __dirname = dirname(__filename);
 const DOMAIN = 'https://univers.run';
 
 const routes = [
-  { path: '/', priority: 0.8, changefreq: 'monthly' },
+  // Pages principales
+  { path: '/', priority: 1.0, changefreq: 'weekly' },
   { path: '/code-univers', priority: 0.9, changefreq: 'weekly' },
-  { path: '/relativite-classique', priority: 0.8, changefreq: 'monthly' },
+  { path: '/relativite-classique', priority: 0.9, changefreq: 'monthly' },
+  { path: '/relativite-echelles', priority: 0.9, changefreq: 'weekly' },
+
+  // Sous-pages Relativité Classique
   { path: '/relativity', priority: 0.7, changefreq: 'monthly' },
   { path: '/relativite-generale', priority: 0.8, changefreq: 'monthly' },
-  { path: '/relativite-echelles', priority: 1.0, changefreq: 'weekly' },
 
+  // Tissu d'Espace-Temps-d'Échelle
   { path: '/tissu-espace-temps-echelle/superposition', priority: 0.7, changefreq: 'monthly' },
   { path: '/tissu-espace-temps-echelle/tapis-roulant', priority: 0.7, changefreq: 'monthly' },
 
+  // Relativité Restreinte des Échelles
   { path: '/relativite-restreinte-echelles/budget-universel', priority: 0.7, changefreq: 'monthly' },
   { path: '/relativite-restreinte-echelles/pivot-temporel', priority: 0.7, changefreq: 'monthly' },
   { path: '/relativite-restreinte-echelles/tapis-roulant', priority: 0.7, changefreq: 'monthly' },
   { path: '/relativite-restreinte-echelles/immobile', priority: 0.7, changefreq: 'monthly' },
   { path: '/relativite-restreinte-echelles/vitesse-extreme', priority: 0.7, changefreq: 'monthly' },
 
+  // Relativité Générale des Échelles
   { path: '/relativite-generale-echelles/escalator-universel', priority: 0.7, changefreq: 'monthly' },
   { path: '/relativite-generale-echelles/environnements', priority: 0.7, changefreq: 'monthly' },
-  { path: '/relativite-generale-echelles/effet-rayonnement', priority: 0.7, changefreq: 'monthly' },
-  { path: '/relativite-generale-echelles/coefficient-multiplicateur', priority: 0.7, changefreq: 'monthly' },
 
+  // Les Tapis Roulants
   { path: '/relativite-echelles-final', priority: 0.8, changefreq: 'monthly' },
 
+  // Le Musée des Dimensions
   { path: '/experiences-pensee-echelles/entree-musee', priority: 0.6, changefreq: 'monthly' },
   { path: '/experiences-pensee-echelles/premiere-piece', priority: 0.6, changefreq: 'monthly' },
 
+  // L'Expansion Interne
   { path: '/expansion-interne/illusion-expansion', priority: 0.7, changefreq: 'monthly' },
   { path: '/expansion-interne/loi-hubble', priority: 0.7, changefreq: 'monthly' },
   { path: '/expansion-interne/energie-sombre', priority: 0.7, changefreq: 'monthly' },
 
+  // Les Trous Noirs
   { path: '/trous-noirs-echelles/creation', priority: 0.7, changefreq: 'monthly' },
   { path: '/trous-noirs-echelles/passage', priority: 0.7, changefreq: 'monthly' },
   { path: '/trous-noirs-echelles/retour-impossible', priority: 0.7, changefreq: 'monthly' },
