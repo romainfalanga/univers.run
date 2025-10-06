@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navigation } from './components/Navigation';
+import { SEO } from './components/SEO';
 import { ClassicalRelativityPage } from './pages/ClassicalRelativityPage';
 import { RelativityCalculatorPage } from './pages/RelativityCalculatorPage';
 import { GeneralRelativityPage } from './pages/GeneralRelativityPage';
@@ -18,6 +19,7 @@ const AppContent: React.FC = () => {
 
   return (
     <div className="relative">
+      <SEO />
       <Navigation />
 
       <Routes>
