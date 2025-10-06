@@ -1,4 +1,3 @@
-export { BlackHolesHubPage } from './BlackHolesHubPage';
 export { CreationPage } from './CreationPage';
 export { PassagePage } from './PassagePage';
 export { WhyNoReturnPage } from './WhyNoReturnPage';

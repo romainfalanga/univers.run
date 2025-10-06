@@ -4,16 +4,8 @@ import { Navigation } from './components/Navigation';
 import { ClassicalRelativityPage } from './pages/ClassicalRelativityPage';
 import { RelativityCalculatorPage } from './pages/RelativityCalculatorPage';
 import { GeneralRelativityPage } from './pages/GeneralRelativityPage';
-import { BlackHoleConceptPage } from './pages/BlackHoleConceptPage';
 import { CodeUniversePage } from './pages/CodeUniversePage';
-import { QuantumLabPage } from './pages/QuantumLabPage';
-import { ScaleLabPage } from './pages/ScaleLabPage';
 import { ScaleRelativityPage } from './pages/ScaleRelativityPage';
-import { SpaceTimeScaleFabricPage } from './pages/SpaceTimeScaleFabricPage';
-import { RestrictedScaleRelativityPage } from './pages/RestrictedScaleRelativityPage';
-import { GeneralScaleRelativityPage } from './pages/GeneralScaleRelativityPage';
-import { ThoughtExperimentsScalePage } from './pages/ThoughtExperimentsScalePage';
-import { BlackHolesScalePage } from './pages/BlackHolesScalePage';
 import { CreationPage, PassagePage, WhyNoReturnPage, QuantumUniverseSizePage, InternalUniversesPage, HarmonyDescentPage, SingularityPage, EventHorizonPage, InvisibilityPage, BehindHorizonPage } from './pages/blackholes';
 import { UniversalBudgetPage, ImmobileStatePage, ExtremSpeedPage, PivotTemporelPage, TapisRoulantRestrictedPage } from './pages/restricted';
 import { UniversalEscalatorPage, EnvironmentsPage, RadiationEffectPage, MultiplierCoefficientPage } from './pages/general';
@@ -34,22 +26,17 @@ const AppContent: React.FC = () => {
         <Route path="/relativite-classique" element={<ClassicalRelativityPage />} />
         <Route path="/relativity" element={<RelativityCalculatorPage />} />
         <Route path="/relativite-generale" element={<GeneralRelativityPage />} />
-        <Route path="/black-hole-concept" element={<BlackHoleConceptPage />} />
-        <Route path="/quantum-lab" element={<QuantumLabPage />} />
-        <Route path="/scale-lab" element={<ScaleLabPage />} />
         <Route path="/relativite-echelles" element={<ScaleRelativityPage />} />
 
         <Route path="/tissu-espace-temps-echelle/superposition" element={<SuperpositionTissusPage />} />
         <Route path="/tissu-espace-temps-echelle/tapis-roulant" element={<TapisRoulantFabricPage />} />
 
-        <Route path="/relativite-restreinte-echelles-old" element={<RestrictedScaleRelativityPage />} />
         <Route path="/relativite-restreinte-echelles/budget-universel" element={<UniversalBudgetPage />} />
         <Route path="/relativite-restreinte-echelles/pivot-temporel" element={<PivotTemporelPage />} />
         <Route path="/relativite-restreinte-echelles/tapis-roulant" element={<TapisRoulantRestrictedPage />} />
         <Route path="/relativite-restreinte-echelles/immobile" element={<ImmobileStatePage />} />
         <Route path="/relativite-restreinte-echelles/vitesse-extreme" element={<ExtremSpeedPage />} />
 
-        <Route path="/relativite-generale-echelles-old" element={<GeneralScaleRelativityPage />} />
         <Route path="/relativite-generale-echelles/escalator-universel" element={<UniversalEscalatorPage />} />
         <Route path="/relativite-generale-echelles/environnements" element={<EnvironmentsPage />} />
         <Route path="/relativite-generale-echelles/effet-rayonnement" element={<RadiationEffectPage />} />
@@ -57,15 +44,13 @@ const AppContent: React.FC = () => {
 
         <Route path="/relativite-echelles-final" element={<TreadmillsHubPage />} />
 
-        <Route path="/experiences-pensee-echelles-old" element={<ThoughtExperimentsScalePage />} />
         <Route path="/experiences-pensee-echelles/entree-musee" element={<MuseumEntrancePage />} />
         <Route path="/experiences-pensee-echelles/premiere-piece" element={<FirstRoomPage />} />
-        
+
         <Route path="/expansion-interne/illusion-expansion" element={<IllusionExpansionPage />} />
         <Route path="/expansion-interne/loi-hubble" element={<HubbleLawPage />} />
         <Route path="/expansion-interne/energie-sombre" element={<DarkEnergyPage />} />
-        
-        <Route path="/trous-noirs-echelles-old" element={<BlackHolesScalePage />} />
+
         <Route path="/trous-noirs-echelles/creation" element={<CreationPage />} />
         <Route path="/trous-noirs-echelles/passage" element={<PassagePage />} />
         <Route path="/trous-noirs-echelles/retour-impossible" element={<WhyNoReturnPage />} />
