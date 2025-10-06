@@ -42,6 +42,15 @@ export const ScaleRelativityPage: React.FC = () => {
               <p className="text-base sm:text-lg lg:text-xl text-gray-100 leading-relaxed">
                 Depuis Einstein, nous savons que l'espace et le temps ne sont pas deux entités séparées, mais les fils croisés d'une même toile : l'espace-temps. Cette vision a bouleversé notre manière de voir l'univers. Pourtant, elle atteint ses limites : au cœur des trous noirs, elle prédit des singularités où la physique cesse de parler.
               </p>
+
+              <div className="flex justify-center mt-4 sm:mt-6">
+                <Link
+                  to="/relativite-classique"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white text-sm sm:text-base font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-cyan-500/25"
+                >
+                  Relativité Classique
+                </Link>
+              </div>
               
               <p className="text-base sm:text-lg text-gray-200 leading-relaxed">
                 <strong className="text-emerald-300">Et si ce vertige venait non pas d'une erreur, mais d'un oubli ?</strong> Et si à côté de l'espace et du temps, il existait une autre dimension, tout aussi fondamentale, que nous n'avons jamais nommée ?
@@ -462,7 +471,7 @@ export const ScaleRelativityPage: React.FC = () => {
               <div className="bg-gray-900/20 p-4 sm:p-6 rounded-lg border-l-4 border-gray-400">
                 <h3 className="text-lg sm:text-xl font-semibold text-gray-200 mb-3">Portes de Recalibrage vers des Univers Plus Harmonieux</h3>
                 <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-                  Dans la Relativité des échelles, les trous noirs ne sont pas des abîmes de destruction, mais des <strong className="text-white">portes de recalibrage</strong> vers des univers plus harmonieux. Franchir l'horizon des événements, c'est effectuer un <strong className="text-white">saut d'échelle instantané</strong>. Le référentiel se recalibre, l'échelle de Planck est repoussée plus loin dans l\'infiniment petit, créant un nouvel univers interne. Chaque passage nous mène vers des mondes plus simples et plus parfaits. L'histoire de l\'univers n'est pas celle d\'un chaos qui grandit, mais d'un <strong className="text-white">chaos qui s\'épure vers l'harmonie</strong>. Explorez chaque aspect de ce phénomène fascinant.
+                  Dans la Relativité des échelles, les trous noirs ne sont pas des abîmes de destruction, mais des <strong className="text-white">portes de recalibrage</strong> vers des univers plus harmonieux. Franchir l'horizon des événements, c'est effectuer un <strong className="text-white">saut d'échelle instantané</strong>. Le référentiel se recalibre, l'échelle de Planck est repoussée plus loin dans l\'infiniment petit, créant un nouvel univers interne. Chaque passage nous mène vers des mondes plus simples et plus parfaits. L\'histoire de l\'univers n\'est pas celle d\'un chaos qui grandit, mais d\'un <strong className="text-white">chaos qui s\'épure vers l'harmonie</strong>. Explorez chaque aspect de ce phénomène fascinant.
                 </p>
               </div>
 

@@ -7,6 +7,10 @@ export const Navigation: React.FC = () => {
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   const isPageActive = (itemPath: string): boolean => {
     if (location.pathname === itemPath) {
       return true;

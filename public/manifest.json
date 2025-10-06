@@ -1,7 +1,7 @@
 {
-  "name": "Univers.run",
-  "short_name": "Univers.run",
-  "description": "Explorez les mystères de l'univers à travers la physique théorique et la relativité",
+  "name": "Relativité des échelles - Univers.run",
+  "short_name": "Relativité",
+  "description": "Explorez les mystères de l'univers à travers la relativité des échelles et la physique théorique",
   "start_url": "/code-univers",
   "display": "standalone",
   "background_color": "#1e1b4b",
@@ -12,25 +12,25 @@
   "categories": ["education", "science", "physics"],
   "icons": [
     {
-      "src": "/universrunlogo.png",
+      "src": "/favicon.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "/universrunlogo.png",
+      "src": "/favicon.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "/universrunlogo.png",
+      "src": "/favicon.png",
       "sizes": "144x144",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/universrunlogo.png",
+      "src": "/favicon.png",
       "sizes": "96x96",
       "type": "image/png",
       "purpose": "any"
@@ -44,7 +44,7 @@
       "url": "/relativity",
       "icons": [
         {
-          "src": "/universrunlogo.png",
+          "src": "/favicon.png",
           "sizes": "96x96"
         }
       ]
@@ -56,10 +56,10 @@
       "url": "/black-hole-concept",
       "icons": [
         {
-          "src": "/universrunlogo.png",
+          "src": "/favicon.png",
           "sizes": "96x96"
         }
       ]
-    },
+    }
   ]
 }
