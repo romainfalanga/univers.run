@@ -15,11 +15,11 @@ export const MuseumEntrancePage: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8 relative z-10">
         <div className="flex justify-center mb-4 sm:mb-6">
           <Link
-            to="/experiences-pensee-echelles"
+            to="/relativite-echelles#musee-dimensions"
             className="group flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-500 hover:to-gray-600 text-white rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-gray-500/25"
           >
             <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5 mr-2 group-hover:-translate-x-1 transition-transform" />
-            Le Musée des Dimensions
+            Relativité des Échelles
           </Link>
         </div>
 
